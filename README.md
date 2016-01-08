@@ -16,16 +16,16 @@ If you'd like to **use the template without the attribution**, you can check out
 
 ##Colour Schemes
 
-### Colour 1 (styles.css)
+#### Colour 1 (styles.css)
 <img src="http://themes.3rdwavemedia.com/wp-content/uploads/2014/11/free-bootstrap-theme-for-developer-color-1.jpg" width="300" alt="devaid color 1" />
 
-### Colour 2 (styles-2.css)
+#### Colour 2 (styles-2.css)
 <img src="http://themes.3rdwavemedia.com/wp-content/uploads/2014/11/free-bootstrap-theme-for-developer-color-2.jpg" width="300" alt="devaid color 2" />
 
-### Colour 3 (styles-3.css)
+#### Colour 3 (styles-3.css)
 <img src="http://themes.3rdwavemedia.com/wp-content/uploads/2014/11/free-bootstrap-theme-for-developer-color-3.jpg" width="300" alt="devaid color 3" />
 
-### Colour 4 (styles-4.css)
+#### Colour 4 (styles-4.css)
 <img src="http://themes.3rdwavemedia.com/wp-content/uploads/2014/11/free-bootstrap-theme-for-developer-color-4.jpg" width="300" alt="devaid color 4" />
 
 
