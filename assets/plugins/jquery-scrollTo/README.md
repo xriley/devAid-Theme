@@ -1,67 +1,165 @@
-# jQuery.ScrollTo
+# jQuery.scrollTo
 
-### Installation and usage
+Lightweight, cross-browser and highly customizable animated scrolling with jQuery
 
-Using [bower](https://github.com/twitter/bower):
+[![](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/2081384/fleslerjquery-scrollTo-on-GitHub)
+[![GitHub version](https://badge.fury.io/gh/flesler%2Fjquery.scrollTo.svg)](http://badge.fury.io/gh/flesler%2Fjquery.scrollTo)
+[![libscore](http://img.shields.io/badge/libscore-31656-brightgreen.svg?style=flat-square)](http://libscore.com/#jQuery.fn.scrollTo)
+
+## Installation
+The plugin requires jQuery 1.8 or higher.
+
+Via [bower](https://github.com/flesler/jquery.scrollTo/blob/master/bower.json):
 ```bash
 bower install jquery.scrollTo
 ```
-Using [composer](http://getcomposer.org/download/):
-
-Either run
-
+Via [npm](https://www.npmjs.com/package/jquery.scrollto):
+```bash
+npm install jquery.scrollto
 ```
+Via [packagist](https://packagist.org/packages/flesler/jquery.scrollTo):
+```php
 php composer.phar require --prefer-dist flesler/jquery.scrollto "*"
 ```
 
-or add
+### Using a public CDN
 
+CDN provided by [jsdelivr](http://www.jsdelivr.com/#!jquery.scrollto)
+```html
+<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 ```
-"flesler/jquery.scrollto": "*"
+CDN provided by [cdnjs](https://cdnjs.com/libraries/jquery-scrollTo)
+```html
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 ```
-
-to the require section of your composer.json.
 
 ### Downloading Manually
 
 If you want the latest stable version, get the latest release from the [releases page](https://github.com/flesler/jquery.scrollTo/releases).
 
-### Notes
+## 2.0
 
-* Apart from the target and duration, the plugin can receive a hash of settings. Documentation and examples are included in the source file.
+Version 2.0 has been recently released. It is mostly backwards compatible, if you have any issue first check [this link](https://github.com/flesler/jquery.scrollTo/wiki/Migrating-to-2.0).
+If your problem is not solved then go ahead and [report the issue](https://github.com/flesler/jquery.scrollTo/issues/new).
 
-* If you are interested in animated "same-page-scrolling" using anchors(href="#some_id"), check http://github.com/flesler/jquery.localScroll
+## Usage
 
-* For a slideshow-like behavior using scrolling, check http://github.com/flesler/jquery.serialScroll
+jQuery.scrollTo's signature is designed to resemble [$().animate()](http://api.jquery.com/animate/).
 
-* The target can be specified as:
-  * A Number/String specifying a position using px or just the number.
-  * A string selector that will be relative, to the element that is going to be scrolled, and must match at least one child.
-  * A DOM element, logically child of the element to scroll.
-  * A hash { top:x, left:y }, x and y can be any kind of number/string like described above.
+```js
+$(element).scrollTo(target[,duration][,settings]);
+```
 
-* The plugin supports relative animations
+### _element_
 
-* 'em' and '%' are not supported as part of the target, because they won't work with jQuery.fn.animate.
-  
-* The plugin might fail to scroll an element, to an inner node that is nested in more scrollable elements. This seems like an odd situation anyway.
+This must be a scrollable element, to scroll the whole window use `$(window)`.
 
-* Both axes ( x, y -> left, top ) can be scrolled, you can send 'x', 'y', 'xy' or 'yx' as 'axis' inside the settings.
+### _target_
 
-* If 2 axis are scrolled, there's an option to queue the animations, so that the second will start once the first ended ('xy' and 'yx' will have different effects)
+This defines the position to where `element` must be scrolled. The plugin supports all these formats:
+ * A number with a fixed position: `250`
+ * A string with a fixed position with px: `"250px"`
+ * A string with a percentage (of container's size): `"50%"`
+ * A string with a relative step: `"+=50px"`
+ * An object with `left` and `top` containining any of the aforementioned: `{left:250, top:"50px"}`
+ * The string `"max"` to scroll to the end.
+ * A string selector that will be relative to the element to scroll: `".section:eq(2)"`
+ * A DOM element, probably a child of the element to scroll: `document.getElementById("top")`
+ * A jQuery object with a DOM element: `$("#top")`
 
-* The option 'margin' can be set to true, then the margin of the target element, will be taken into account and will be deducted.
+### _settings_
 
-* 'margin' will only be valid, if the target is a selector, a DOM element, or a jQuery Object.
+The `duration` parameter is a shortcut to the setting with the same name.
+These are the supported settings:
+ * __axis__: The axes to animate: `xy` (default), `x`, `y`, `yx`
+ * __interrupt__: If `true` will cancel the animation if the user scrolls. Default is `false`
+ * __limit__: If `true` the plugin will not scroll beyond the container's size. Default is `true`
+ * __margin__: If `true`, subtracts the margin and border of the `target` element. Default is `false`
+ * __offset__: Added to the final position, can be a number or an object with `left` and `top`
+ * __over__: Adds a % of the `target` dimensions: `{left:0.5, top:0.5}`
+ * __queue__: If `true` will scroll one `axis` and then the other. Default is `false`
+ * __onAfter(target, settings)__: A callback triggered when the animation ends (jQuery's `complete()`)
+ * __onAfterFirst(target, settings)__: A callback triggered after the first axis scrolls when queueing
 
-* The option 'offset' allows to scroll less or more than the actual target by a defined amount of pixels. Can be a number(both axes), { top:x, left:y } or a function that returns an object with top & left.
+You can add any setting supported by [$().animate()](http://api.jquery.com/animate/#animate-properties-options) as well:
 
-* The option 'over' lets you add or deduct a fraction of the element's height and width from the final position. so over:0.5 will scroll to the middle of the object. can be specified with {top:x, left:y}
+ * __duration__: Duration of the animation, default is `0` which makes it instantaneous
+ * __easing__: Name of an easing equation, you must register the easing function: `swing`
+ * __fail()__: A callback triggered when the animation is stopped (f.e via `interrupt`)
+ * __step()__: A callback triggered for every animated property on every frame
+ * __progress()__: A callback triggered on every frame
+ * And more, check jQuery's [documentation](http://api.jquery.com/animate/#animate-properties-options)
 
-* Don't forget the callback event is now called 'onAfter', and if queuing is activated, then 'onAfterFirst' can be used.
+### window shorthand
 
-* If the first axis to be scrolled, is already positioned, that animation will be skipped, to avoid a delay in the animation.
+You can use `$.scrollTo(...)` as a shorthand for `$(window).scrollTo(...)`.
 
-* The call to the plugin can be made in 2 different ways: $(...).scrollTo( target, duration, settings ) or $(...).scrollTo( target, settings ). Where one of the settings is 'duration'.
+### Changing the default settings
 
-* If you find any bug, or you have any advice, don't hesitate to open an issue. 
+As with most plugins, the default settings are exposed so they can be changed.
+```js
+$.extend($.scrollTo.defaults, {
+  axis: 'y',
+  duration: 800
+});
+```
+
+### Stopping the animation
+
+jQuery.scrollTo ends up creating ordinary animations which can be stopped by calling [$().stop()](http://api.jquery.com/stop/) or [$().finish()](http://api.jquery.com/finish/) on the same element you called `$().scrollTo()`, including the `window`.
+Remember you can pass a `fail()` callback to be called when the animation is stopped.
+
+### onAfter and requestAnimationFrame
+
+jQuery.scrollTo has a `onAfter` callback for work that runs after the animation finishes. It will be called before the `scroll` event fires. To combat this you can use  [requestAnimationFrame](http://caniuse.com/#feat=requestanimationframe) to do work on the next tick. It is available in many browsers, but you may want to [polyfill](https://github.com/chrisdickinson/raf) for the few it does not support.
+```js
+$.scrollTo(100, {
+  onAfter: function() {
+    requestAnimationFrame(function() {
+        $(".result").addClass("selected");
+    });
+  }
+});
+```
+
+## Demo
+
+Check the [demo](http://demos.flesler.com/jquery/scrollTo/) to see every option in action.
+
+## Complementary plugins
+
+There are two plugins, also created by me that depend on jQuery.scrollTo and aim to simplify certain use cases.
+
+### [jQuery.localScroll](https://github.com/flesler/jquery.localScroll)
+
+This plugin makes it very easy to implement anchor navigation.
+If you don't want to include another plugin, you can try using something like [this minimalistic gist](https://gist.github.com/flesler/3f3e1166690108abf747).
+
+### [jQuery.serialScroll](https://github.com/flesler/jquery.serialScroll)
+
+This plugin simplifies the creation of scrolling slideshows.
+
+## License
+
+(The MIT License)
+
+Copyright (c) 2007-2016 Ariel Flesler <aflesler@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
