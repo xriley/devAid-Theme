@@ -34,7 +34,7 @@ If you'd like to **use the template without the attribution**, you can [buy the 
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/startup/devaid-free-bootstrap-theme-for-developers-side-projects/?target=changelog)
 
-##Colour Schemes
+## Colour Schemes
 
 #### Colour 1 (theme-1.css)
 <img src="http://themes.3rdwavemedia.com/wp-content/uploads/2014/11/free-bootstrap-theme-for-developer-color-1.jpg" width="300" alt="devaid color 1" />
