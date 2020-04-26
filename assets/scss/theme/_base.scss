@@ -33,6 +33,7 @@ a {
 
     &:focus {
         color: #fff;
+        @include box-shadow(none);
     }
 }
 
@@ -523,9 +524,10 @@ pre code {
             
             .svg-inline--fa {
                 color: #fff;
-                
                 text-align: center;
-                margin-top: 8px;
+                margin-top: 14px;
+                font-size: 20px;
+                
             }
         }
         

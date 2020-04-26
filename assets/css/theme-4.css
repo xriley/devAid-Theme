@@ -1,10 +1,9 @@
 /*! 
  * Template Name: devAid - Bootstrpa 4 Theme for developers
- * Version: 2.0
+ * Version: 2.1
  * Author: Xiaoying Riley
  * Copyright: 3rd Wave Media
  * Twitter: @3rdwave_themes
- * License: Creative Commons Attribution 3.0 License
  * Website: https://themes.3rdwavemedia.com/
 */
 /* ======= Base ======= */
@@ -51,6 +50,9 @@ a:hover {
 
 .btn:focus, a.btn:focus {
   color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 a.btn-cta-primary, .btn-cta-primary {
@@ -639,7 +641,8 @@ pre code {
 .contact .social-icons a .svg-inline--fa {
   color: #fff;
   text-align: center;
-  margin-top: 8px;
+  margin-top: 14px;
+  font-size: 20px;
 }
 
 /* ======= Footer ======= */
