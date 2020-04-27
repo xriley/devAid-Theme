@@ -8,7 +8,6 @@
 
 devAid is a free Bootstrap theme designed to **help developers promote their personal projects**. It comes with **4 colour schemes**. The **source LESS files** are included so you can easily make styling customisations.
 
-## Author & License
 
 ## Author & License
 
@@ -58,7 +57,7 @@ If you'd like to **use the template without the footer attribution link**, you c
 -  1000+ FontAwesome icons
 
 
-##Credits
+## Credits
 - [Bootstrap](http://getbootstrap.com/)
 - [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
 - [jQuery](http://jquery.com/)
