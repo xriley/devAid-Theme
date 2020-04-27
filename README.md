@@ -6,7 +6,7 @@
 
 **Demo:** https://themes.3rdwavemedia.com/bootstrap-templates/startup/devaid-free-bootstrap-theme-for-developers-side-projects/
 
-devAid is a free Bootstrap theme designed to **help developers promote their personal projects**. It comes with **4 colour schemes**. The **source LESS files** are included so you can easily make styling customisations.
+devAid is a free Bootstrap theme designed to **help developers promote their personal projects**. It comes with **4 colour schemes**. The **source SCSS files** are included so you can easily make styling customisations.
 
 
 ## Author & License
