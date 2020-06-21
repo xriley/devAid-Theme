@@ -80,7 +80,7 @@ pre code {
 .header {
     padding: 10px 0;
     background: $color;
-    color: #fff;
+    color: $color-2;
     position: fixed;
     width: 100%;
     
@@ -187,11 +187,11 @@ pre code {
 /* ======= Promo Section ======= */
 .promo {
     background: $color;
-    color: #fff;
+    color: #F2F5EA;
     padding-top: 150px;
     .title {
-        font-size: 98px;
-        color: darken($color, 30%);
+        font-size: 50px;
+        color: $smoky-white;
         margin-top: 0;
         .highlight {
             color: $color-2;
@@ -216,21 +216,21 @@ pre code {
     .meta {
         margin-top: 120px;
         margin-bottom: 30px;
-        color: darken($color, 20%);
+        color: $black;
         li {
             margin-right: 15px;
             
         }
         a {
-            color: darken($color,20%);
+            color: $smoky-white;
             &:hover {
-                color: darken($color, 30%);
+                color: darken($smoky-white, 30%);
             }
         }
     }
     
     .social-media {
-        background: darken($color, 15%);
+        background: $color-2;
         padding: 10px 0;
         margin: 0 auto;
         li {
@@ -241,6 +241,9 @@ pre code {
                 top: -5px;
             }
         }
+        a {
+            color: $text-color;
+        }
     }
 
 }
@@ -250,7 +253,7 @@ pre code {
     padding: 80px 0;
     background: $smoky-white;
     .title {
-        color: darken($color, 30%);
+        color: $color;
         margin-top: 0;
         margin-bottom: 60px;
     }
@@ -269,14 +272,14 @@ pre code {
             top: 0;
             .svg-inline--fa {
                 font-size: 24px;
-                color: darken($color, 30%);
+                color: $color;
             }
         }
         .content {
             padding-left: 60px;
             .sub-title {
                 margin-top: 0;
-                color: darken($color, 30%);
+                color: $color;
                 font-size: 18px;
             }
         }
@@ -288,14 +291,14 @@ pre code {
 .features {
     padding: 80px 0;
     background: $color;
-    color: #fff;
+    color: $color-2;
     .title {
-        color: darken($color, 30%);
+        color: $smoky-white;
         margin-top: 0;
         margin-bottom: 30px;
     }
     a {
-        color: darken($color, 30%);
+        color: $black;
         &:hover {
             color: darken($color, 40%);
         }
@@ -303,10 +306,10 @@ pre code {
     .feature-list {
         li {
             margin-bottom: 10px;
-            color: darken($color, 30%);
+            color: $smoky-white;
             .svg-inline--fa {
                 margin-right: 5px;
-                color: #fff;
+                color: $color-2;
             }
         }
     }
