@@ -38,8 +38,7 @@ a {
 }
 
 a.btn-cta-primary, .btn-cta-primary { 
-    background: darken($color, 30%);
-    border: 1px solid darken($color, 30%);
+    background: $color-2;
     color: #fff;
     font-weight:600;
     text-transform: uppercase;
@@ -79,7 +78,7 @@ pre code {
 /* ======= Header ======= */
 .header {
     padding: 10px 0;
-    background: $color;
+    background: $black;
     color: $color-2;
     position: fixed;
     width: 100%;
@@ -101,7 +100,7 @@ pre code {
         font-size: 26px;
         padding-top: 10px;
         a {
-            color:#fff;
+            color:$text-color;
             &:hover {
                 text-decoration: none;
             }
@@ -122,7 +121,7 @@ pre code {
 	        padding: 8px 8px;
 	        right:10px;
 	        top: 10px;
-	        background: darken($color, 30%);
+	        background: $color;
 	        
 	        &:focus {
 	            outline: none;
@@ -151,7 +150,7 @@ pre code {
                 font-family: 'Montserrat', sans-serif;
                 
                 .nav-link {
-                    color: darken($color, 25%);
+                    color: $color;
                     @include transition (none);
                     font-size: 14px;
                     padding: 15px 10px;
@@ -160,7 +159,7 @@ pre code {
 	                    background: none;
 	                }
                     &:hover {  
-                        color: darken($color, 30%);    
+                        color: $color;    
                         background: none;             
                     }
                     &:focus {
@@ -186,12 +185,12 @@ pre code {
 
 /* ======= Promo Section ======= */
 .promo {
-    background: $color;
+    background: $smoky-white;
     color: #F2F5EA;
     padding-top: 150px;
     .title {
         font-size: 50px;
-        color: $smoky-white;
+        color: $text-color;
         margin-top: 0;
         .highlight {
             color: $color-2;
@@ -216,15 +215,15 @@ pre code {
     .meta {
         margin-top: 120px;
         margin-bottom: 30px;
-        color: $black;
+        color: $text-color;
         li {
             margin-right: 15px;
             
         }
         a {
-            color: $smoky-white;
+            color: $light-pink;
             &:hover {
-                color: darken($smoky-white, 30%);
+                color: darken($light-pink, 30%);
             }
         }
     }
@@ -251,7 +250,7 @@ pre code {
 /* ======= About Section ======= */
 .about {
     padding: 80px 0;
-    background: $smoky-white;
+    background: $black;
     .title {
         color: $color;
         margin-top: 0;
@@ -290,10 +289,10 @@ pre code {
 /* ======= Features Section ======= */
 .features {
     padding: 80px 0;
-    background: $color;
-    color: $color-2;
+    background: $smoky-white;
+    color: $color;
     .title {
-        color: $smoky-white;
+        color: $color;
         margin-top: 0;
         margin-bottom: 30px;
     }
@@ -306,7 +305,7 @@ pre code {
     .feature-list {
         li {
             margin-bottom: 10px;
-            color: $smoky-white;
+            color: $text-color;
             .svg-inline--fa {
                 margin-right: 5px;
                 color: $color-2;
