@@ -6,16 +6,19 @@
  * Twitter: @3rdwave_themes
  * Website: https://themes.3rdwavemedia.com/
 */
+@font-face {
+  font-family: 'Wavehaus';
+  src: url("../fonts/wavehaus.otf"); }
 /* ======= Base ======= */
 body {
-  font-family: 'Lato', arial, sans-serif;
+  font-family: 'Open Sans', arial, sans-serif;
   color: #F2F5EA;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Wavehaus', sans-serif;
   font-weight: 700;
   color: #8EB897; }
 
@@ -34,7 +37,7 @@ a {
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
-  font-family: 'Montserrat', arial, sans-serif;
+  font-family: 'Wavehaus', arial, sans-serif;
   padding: 8px 16px;
   font-weight: bold; }
   .btn .svg-inline--fa, a.btn .svg-inline--fa {

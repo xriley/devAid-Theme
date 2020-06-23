@@ -22,6 +22,12 @@ $black: #171D21;
 $light-pink: #EAD7E1;
 $heart: #fb866a;
 
+// fonts
+// header font
+@font-face {
+    font-family: 'Wavehaus';
+    src: url('../fonts/wavehaus.otf');
+}
 
 //*************************** Theme Styles ****************************/
 // Import theme styles

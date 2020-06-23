@@ -1,6 +1,6 @@
 /* ======= Base ======= */
 body {
-    font-family: 'Lato', arial, sans-serif;   
+    font-family: 'Open Sans', arial, sans-serif;   
     color: $text-color;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
@@ -8,7 +8,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6  {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Wavehaus', sans-serif;
     font-weight: 700;
     color: $color;
 }
@@ -24,7 +24,7 @@ a {
 
 .btn, a.btn {
     @include transition (all 0.4s ease-in-out);
-    font-family: 'Montserrat', arial, sans-serif;
+    font-family: 'Wavehaus', arial, sans-serif;
     padding: 8px 16px;
     font-weight:bold;
     .svg-inline--fa {
