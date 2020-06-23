@@ -230,22 +230,22 @@ pre code {
         font-size: 18px; }
 
 /* ======= Features Section ======= */
-.features {
+.sponsors {
   padding: 80px 0;
   background: #114B5F;
   color: #8EB897; }
-  .features .title {
+  .sponsors .title {
     color: #8EB897;
     margin-top: 0;
     margin-bottom: 30px; }
-  .features a {
+  .sponsors a {
     color: #171D21; }
-    .features a:hover {
+    .sponsors a:hover {
       color: #2f4b35; }
-  .features .feature-list li {
+  .sponsors .feature-list li {
     margin-bottom: 10px;
     color: #F2F5EA; }
-    .features .feature-list li .svg-inline--fa {
+    .sponsors .feature-list li .svg-inline--fa {
       margin-right: 5px;
       color: #FF5964; }
 
