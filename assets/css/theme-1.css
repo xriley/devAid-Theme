@@ -11,14 +11,19 @@
   src: url("../fonts/wavehaus.otf"); }
 /* ======= Base ======= */
 body {
-  font-family: 'Open Sans', arial, sans-serif;
+  font-family: "Open Sans", arial, sans-serif;
   color: #F2F5EA;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Wavehaus', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Wavehaus", sans-serif;
   font-weight: 700;
   color: #8EB897; }
 
@@ -32,39 +37,46 @@ a {
     text-decoration: underline;
     color: #6fa47a; }
 
-.btn, a.btn {
+.btn,
+a.btn {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
-  font-family: 'Wavehaus', arial, sans-serif;
+  font-family: "Wavehaus", arial, sans-serif;
   padding: 8px 16px;
   font-weight: bold; }
-  .btn .svg-inline--fa, a.btn .svg-inline--fa {
+  .btn .svg-inline--fa,
+  a.btn .svg-inline--fa {
     margin-right: 5px; }
-  .btn:focus, a.btn:focus {
+  .btn:focus,
+  a.btn:focus {
     color: #fff;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none; }
 
-a.btn-cta-primary, .btn-cta-primary {
+a.btn-cta-primary,
+.btn-cta-primary {
   background: #FF5964;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase; }
-  a.btn-cta-primary:hover, .btn-cta-primary:hover {
+  a.btn-cta-primary:hover,
+  .btn-cta-primary:hover {
     background: #395b40;
     border: 1px solid #395b40;
     color: #fff; }
 
-a.btn-cta-secondary, .btn-cta-secondary {
+a.btn-cta-secondary,
+.btn-cta-secondary {
   background: #FF5964;
   border: 1px solid #FF5964;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase; }
-  a.btn-cta-secondary:hover, .btn-cta-secondary:hover {
+  a.btn-cta-secondary:hover,
+  .btn-cta-secondary:hover {
     background: #ff404c;
     border: 1px solid #ff404c;
     color: #fff; }
@@ -136,7 +148,7 @@ pre code {
   .header .main-nav .nav .nav-item {
     font-weight: bold;
     margin-right: 30px;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: "Montserrat", sans-serif; }
     .header .main-nav .nav .nav-item .nav-link {
       color: #8EB897;
       -webkit-transition: none;
@@ -163,7 +175,7 @@ pre code {
 /* ======= Promo Section ======= */
 .promo {
   background: #114B5F;
-  color: #F2F5EA;
+  color: #f2f5ea;
   padding-top: 150px; }
   .promo .title {
     font-size: 50px;
@@ -220,13 +232,12 @@ pre code {
     margin-bottom: 30px; }
     .about .item .icon-holder {
       position: absolute;
-      left: 30px;
       top: 0; }
       .about .item .icon-holder .svg-inline--fa {
         font-size: 24px;
         color: #8EB897; }
     .about .item .content {
-      padding-left: 60px; }
+      text-align: center; }
       .about .item .content .sub-title {
         margin-top: 0;
         color: #8EB897;
@@ -483,6 +494,16 @@ pre code {
     opacity: 0.8; }
   .footer .fa-heart {
     color: #fb866a; }
+
+.about-us-hexagon {
+  text-align: center;
+  width: 306px;
+  height: 353px;
+  background-size: 306px 353px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("/assets/images/about-us-hexagon.svg"); }
 
 @media (max-width: 767px) {
   .header .main-nav .navbar-collapse {

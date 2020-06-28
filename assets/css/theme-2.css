@@ -1,10 +1,10 @@
 /*
 Error: Undefined variable: "$black".
-        on line 81 of scss/theme/_base.scss
+        on line 88 of scss/theme/_base.scss
         from line 27 of scss/theme-2.scss
 
 Backtrace:
-scss/theme/_base.scss:81
+scss/theme/_base.scss:88
 scss/theme-2.scss:27
 /home/jared/gems/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /home/jared/gems/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
@@ -72,4 +72,4 @@ scss/theme-2.scss:27
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 81 of scss/theme/_base.scss\A         from line 27 of scss/theme-2.scss"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 88 of scss/theme/_base.scss\A         from line 27 of scss/theme-2.scss"; }
