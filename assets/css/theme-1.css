@@ -174,7 +174,8 @@ pre code {
 
 /* ======= Promo Section ======= */
 .promo {
-  background: #114B5F;
+  background-image: url("/assets/images/top-banner-bg.svg");
+  background-size: 100% 100%;
   color: #f2f5ea;
   padding-top: 150px; }
   .promo .title {
@@ -231,7 +232,7 @@ pre code {
     position: relative;
     margin-bottom: 30px; }
     .about .item .icon-holder {
-      position: absolute;
+      position: relative;
       top: 0; }
       .about .item .icon-holder .svg-inline--fa {
         font-size: 24px;
@@ -239,6 +240,7 @@ pre code {
     .about .item .content {
       text-align: center; }
       .about .item .content .sub-title {
+        text-align: center;
         margin-top: 0;
         color: #8EB897;
         font-size: 18px; }
@@ -497,14 +499,17 @@ pre code {
 
 .about-us-hexagon {
   text-align: center;
-  width: 306px;
+  width: 340px;
   height: 353px;
-  background-size: 306px 353px;
+  background-size: 340px 353px;
   padding-top: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-image: url("/assets/images/about-us-hexagon.svg"); }
 
+@media screen and (min-width: 720px) {
+  .left-shifted {
+    margin-left: 11.5rem; } }
 @media (max-width: 767px) {
   .header .main-nav .navbar-collapse {
     border-top: none;

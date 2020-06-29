@@ -186,7 +186,8 @@ pre code {
 
 /* ======= Promo Section ======= */
 .promo {
-  background: $smoky-white;
+  background-image: url('/assets/images/top-banner-bg.svg');
+  background-size: 100% 100%;
   color: #f2f5ea;
   padding-top: 150px;
   .title {
@@ -265,7 +266,7 @@ pre code {
     position: relative;
     margin-bottom: 30px;
     .icon-holder {
-      position: absolute;
+      position: relative;
       //left: 30px;
       top: 0;
       .svg-inline--fa {
@@ -277,6 +278,7 @@ pre code {
       //padding-left: 60px;
       text-align: center;
       .sub-title {
+        text-align: center;
         margin-top: 0;
         color: $color;
         font-size: 18px;
@@ -547,14 +549,20 @@ pre code {
 .about-us-hexagon {
     //position: relative;
     text-align: center;
-    width: 306px;
+    width: 340px;
     height: 353px;
-    background-size: 306px 353px;
+    background-size: 340px 353px;
     padding-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-image: url('/assets/images/about-us-hexagon.svg');
     //background-repeat: no-repeat;
     //left: 30%;
     //transform: translate(-50%, -50%);
   }
+
+@media screen and (min-width: 720px) {
+  .left-shifted {
+    margin-left: 11.5rem;
+  }
+}
