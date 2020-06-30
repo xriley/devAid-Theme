@@ -29,7 +29,7 @@
 
 .hexIn {
   position: absolute;
-  width: 96%;
+  width: 80%;
   padding-bottom: 110.851%;
   /* =  width / sin(60) */
   margin: 0 2%;
@@ -68,7 +68,6 @@
   margin: 0 auto;
   -webkit-transform: rotate3d(0, 0, 0, 0deg);
   transform: rotate3d(0, 0, 0, 0deg);
-  z-index: -1;
 }
 
 .hex h1, .hex p {
@@ -115,7 +114,7 @@
     padding-bottom: 10%;
   }
   .hex {
-    width: 33.333%;
+    width: 33.3%;
   }
   .hex:nth-child(5n+4) {
     /* first hexagon of even rows */
