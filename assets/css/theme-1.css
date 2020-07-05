@@ -175,12 +175,12 @@ pre code {
 /* ======= Promo Section ======= */
 .promo {
   background-image: url("/assets/images/top-banner-bg.svg");
-  background-size: 100% 100%;
-  color: #f2f5ea;
+  background-size: cover;
+  color: #171D21;
   padding-top: 150px; }
   .promo .title {
     font-size: 50px;
-    color: #F2F5EA;
+    color: #171D21;
     margin-top: 0; }
     .promo .title .highlight {
       color: #FF5964; }
@@ -221,7 +221,7 @@ pre code {
   padding: 80px 0;
   background: #171D21; }
   .about .title {
-    color: #8EB897;
+    color: #171D21;
     margin-top: 0;
     margin-bottom: 60px; }
   .about .intro {
