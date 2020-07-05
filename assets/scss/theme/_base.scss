@@ -187,12 +187,13 @@ pre code {
 /* ======= Promo Section ======= */
 .promo {
   background-image: url('/assets/images/top-banner-bg.svg');
-  background-size: 100% 100%;
-  color: #f2f5ea;
+  background-size: cover;
+  //background-repeat: no-repeat;
+  color: $black;
   padding-top: 150px;
   .title {
     font-size: 50px;
-    color: $text-color;
+    color: $black;
     margin-top: 0;
     .highlight {
       color: $color-2;
@@ -252,7 +253,7 @@ pre code {
   padding: 80px 0;
   background: $black;
   .title {
-    color: $color;
+    color: $black;
     margin-top: 0;
     margin-bottom: 60px;
   }
