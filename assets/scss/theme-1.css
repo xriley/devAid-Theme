@@ -224,15 +224,15 @@ pre code {
 
 /* ======= Promo Section ======= */
 .promo {
-  background-image: url("/assets/images/css.svg");
+  background-image: url("/assets/images/Frame.svg");
   background-size: cover;
-  color: #171D21;
+  color: white;
   padding-top: 150px;
 }
 
 .promo .title {
   font-size: 50px;
-  color: #171D21;
+  color: white;
   margin-top: 0;
 }
 
