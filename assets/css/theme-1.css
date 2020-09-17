@@ -476,20 +476,19 @@ pre code {
 
 /* ======= Contact Section ======= */
 .contact {
-  padding: 80px 0;
+  padding: 10px 0 10000px;
   background: #8EB897;
   color: #fff;
 }
 
 .contact .contact-inner {
   max-width: 760px;
-  margin: 0 auto;
 }
 
+
 .contact .title {
-  color: #436a4b;
-  margin-top: 0;
-  margin-bottom: 30px;
+  color: #2f4b35;
+  margin-bottom: 0px;
 }
 
 .contact .intro {
@@ -504,114 +503,6 @@ pre code {
   color: #2f4b35;
 }
 
-.contact .author-message {
-  position: relative;
-  margin-bottom: 60px;
-}
-
-.contact .author-message .profile {
-  position: absolute;
-  left: 30px;
-  top: 15px;
-  width: 100px;
-  height: 100px;
-}
-
-.contact .author-message .profile img {
-  border-radius: 50%;
-  background-clip: padding-box;
-}
-
-.contact .author-message .speech-bubble {
-  margin-left: 155px;
-  background: #85b28e;
-  color: #436a4b;
-  padding: 30px;
-  border-radius: 4px;
-  background-clip: padding-box;
-  position: relative;
-}
-
-.contact .author-message .speech-bubble .sub-title {
-  color: #436a4b;
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.contact .author-message .speech-bubble a {
-  color: #fff;
-}
-
-.contact .author-message .speech-bubble:after {
-  position: absolute;
-  left: -10px;
-  top: 60px;
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid #85b28e;
-}
-
-.contact .author-message .speech-bubble .source {
-  margin-top: 30px;
-}
-
-.contact .author-message .speech-bubble .source a {
-  color: #436a4b;
-}
-
-.contact .author-message .speech-bubble .source .title {
-  color: #60996c;
-}
-
-.contact .info .sub-title {
-  color: #6fa47a;
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-
-.contact .social-icons {
-  list-style: none;
-  padding: 10px 0;
-  margin-bottom: 0;
-  display: inline-block;
-  margin: 0 auto;
-}
-
-.contact .social-icons li {
-  float: left;
-}
-
-.contact .social-icons li.last {
-  margin-right: 0;
-}
-
-.contact .social-icons a {
-  display: inline-block;
-  background: #60996c;
-  width: 48px;
-  height: 48px;
-  text-align: center;
-  font-size: 24px;
-  border-radius: 50%;
-  background-clip: padding-box;
-  margin-right: 8px;
-}
-
-.contact .social-icons a:hover {
-  background: #ff2634;
-}
-
-.contact .social-icons a .svg-inline--fa {
-  color: #fff;
-  text-align: center;
-  margin-top: 14px;
-  font-size: 20px;
-}
 
 /* ======= Footer ======= */
 .footer {

@@ -88,6 +88,76 @@
   top: 50%;
   padding-bottom: 50%; }
 
+/*  HEXAGON SOCIALS  **********************************************************************/
+
+.socials div{
+  display: inline-block;
+}
+.fab.fa-github, fa.fa-envelope, fab.fa-instagram{
+  color: white;
+  font-size: 50px;
+  line-height: 60px;
+  text-shadow: 2px 2px 10px black;
+}
+
+#hexagon {
+  width: 100px;
+  margin-bottom: 5%;
+	height: 60px;
+	background: #171D21;
+	position: relative;
+   top: 10px;
+   text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#hexagon:before {
+  content: ""; 
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid #171D21;
+    -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid #171D21;
+    -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#hexagon:hover{
+  background: #FF5964;
+}
+
+#hexagon:hover:after{
+  border-top: 25px solid #FF5964;
+}
+#hexagon:hover:before{
+  border-bottom: 25px solid #FF5964;
+}
+
 /*** HOVER EFFECT  **********************************************************************/
 .hexLink:hover h1, .hexLink:focus h1,
 .hexLink:hover p, .hexLink:focus p {
