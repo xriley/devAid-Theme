@@ -29,7 +29,7 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 
 ## Latest Version
-**v2.1** - 27 April 2020
+**v2.2** - 12 Oct 2020
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/startup/devaid-free-bootstrap-theme-for-developers-side-projects/?target=changelog)
 

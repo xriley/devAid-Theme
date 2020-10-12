@@ -1,6 +1,6 @@
 /*! 
  * Template Name: devAid - Bootstrpa 4 Theme for developers
- * Version: 2.1
+ * Version: 2.2
  * Author: Xiaoying Riley
  * Copyright: 3rd Wave Media
  * Twitter: @3rdwave_themes
@@ -275,7 +275,7 @@ pre code {
 .promo .social-media li.facebook-like {
   margin-top: 0;
   position: relative;
-  top: -5px;
+  top: 2px;
 }
 
 /* ======= About Section ======= */
