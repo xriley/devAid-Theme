@@ -2,216 +2,332 @@
 <html lang="en">
 
 <head>
-    <title>Redmond STEM Center</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- HEx css-->
-    <link rel="stylesheet" href="assets/css/hex.css">
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/scss/theme-1.css">
-    <!-- GitHub Button -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Redmond STEM Center</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/AppleFavicon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">\
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
-<body data-spy="scroll">
+<body>
 
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
 
+      <div class="logo mr-auto">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
 
-    <!---//Facebook button code-->
-    <div id="fb-root"></div>
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Events</a></li>
+          <li><a href="#portfolio">Sponsors</a></li>
+          <li><a href="#contact">Contact</a></li>
 
-    <!-- ******HEADER****** -->
-    <header id="header" class="header">
-        <div class="container">
-            <h1 class="logo float-left">
-                <a class="scrollto" href="#promo">
-                    <img src="assets/images/logo.svg" width=100px>
-                </a>
-            </h1>
-            <!--//logo-->
-            <nav id="main-nav" class="main-nav navbar-expand-md float-right" role="navigation">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--//nav-toggle-->
-
-                <div class="navbar-collapse collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item sr-only"><a class="nav-link scrollto" href="#promo">Home</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#sponsors">Sponsors</a></li>
-                        <li class="nav-item last"><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    </ul>
-                    <!--//nav-->
-                </div>
-                <!--//navabr-collapse-->
-            </nav>
-            <!--//main-nav-->
-        </div>
-    </header>
-    <!--//header-->
-
-    <!-- ******PROMO****** -->
-    <section id="promo" class="promo section offset-header">
-        <div class="container text-center">
-            <h2 class="title">Redmond<span class="highlight"> STEM </span>Center</h2>
-            <p class="intro">An upcoming community youth makerspace in Redmond, WA</p>
-            <div class="btns">
-                <a class="btn btn-cta-secondary" href="/project-proposal.pdf" target="_blank">
-                    PROJECT PROPOSAL</a>
-                <a class="btn btn-cta-secondary"
-                    href="/business-plan.pdf"
-                    target="_blank">BUSINESS PLAN</a>
-            </div>
-            <div class="spacer"></div>
-        </div>
-        <!--//container-->
-        <div class="social-media">
-            <!--
-            <div class="social-media-inner container text-center">
-                <ul class="list-inline mb-2">
-                    <li class="list-inline-item twitter-follow"><a href="https://twitter.com/3rdwave_themes" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    </li>
-                    <li class="list-inline-item twitter-tweet">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="3rdwave_themes" data-hashtags="bootstrap">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    </li>
-                    <li class="list-inline-item facebook-like">
-                         <div class="fb-like" data-href="https://themes.3rdwavemedia.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-                    </li>
-                    <li class="list-inline-item github-star">
-<a class="github-button" href="https://github.com/xriley/devaid-theme" data-icon="octicon-star" aria-label="Star xriley/devaid-theme on GitHub">Star</a></li>
-                    <li class="list-inline-item github-follow">
-<a class="github-button" href="https://github.com/xriley" aria-label="Follow @xriley on GitHub">Follow @xriley</a></li>                   
-                </ul>
-            </div>
-            -->
-        </div>
-    </section>
-    <!--//promo-->
-
-
-    <!-- ******ABOUT****** -->
-    <section id="about" class="about section">
-        <div class="container">
-            <div class="intro text-center">
-                We're a group of high school students raising funds for a youth community maker space in the Redmond, WA
-                area. <div class="spacer"></div>
-                Some examples of activities that will be at the Redmond STEM Center are:
-            </div>
-        </div>
-        <div class="spacer"></div>
-        <ul id="hexGrid">
-            <li class="hex">
-                <div class="hexIn">
-                    <div class="hexLink">
-                        <img src='/assets/images/about-us-hexagon.svg' alt="" />
-                        <h1>Host FIRST Robotics Team 7461</h1>
-                        <p>Founded in 2018, this award-winning Robotics 
-                            team is open to all high school students, competing in the
-                             FIRST robotics competition. 
-                             You can learn more on the team's <a href="https://sushisquad.org"> website.</a>website.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="hex">
-                <div class="hexIn">
-                    <div class="hexLink">
-                        <img src='/assets/images/about-us-hexagon.svg' alt="" />
-                        <h1>Phoenix Rocketry Organization</h1>
-                        <p>Phoenix Rocketry Organization is a nonprofit team of dedicated high school students who are a regular participant in the American Rocketry Challenge (TARC), the world's largest model rocketry competition.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="hex">
-                <div class="hexIn">
-                    <div class="hexLink">
-                        <img src='/assets/images/about-us-hexagon.svg' alt="" />
-                        <h1>Open hack nights</h1>
-                        <p>One night a week, the center will allow anybody, even non members, to use the tools under adult supervision.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="hex">
-                <div class="hexIn">
-                    <div class="hexLink">
-                        <img src='/assets/images/about-us-hexagon.svg' alt="" />
-                        <h1>Host classes</h1>
-                        <p>With connections to industry professionals, RSC will host classes in programming, CAD (computer aided design), shop tools, electronics, and more.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="hex">
-                <div class="hexIn">
-                    <div class="hexLink">
-                        <img src='/assets/images/about-us-hexagon.svg' alt="" />
-                        <h1>Create new clubs and teams</h1>
-                        <p>In addition to the already existing robotics and rocketry teams, RSC will create and host more clubs and teams.</p>
-                    </div>
-                </div>
-            </li>
         </ul>
-        <!--//container-->
-    </section>
-    <!--//features-->
+      </nav><!-- .nav-menu -->
 
-    <!-- ******CONTACT****** -->
-    <section class="contact">
-        <div class="container">
-                <h2 class="text-center" style="color:#2f4b35;">Get In Touch With Us!</h2>
-                <h2 class="text-center" style="font-size: 20px; color:#436a4b; margin-bottom: 5%;">Send us an email, join our Discord, or check out our Instagram!</h2>
-                <div class="socials text-center">
-                    <div id="hexagon"><a href="mailto:contact@redmondstemcenter.org" target="_blank"><i style=" margin: 10%; color:white;" class="fa fa-envelope fa-2x"></i></a></div>                   
-                    <div id="hexagon"><a href="https://discord.gg/uPkteTG" target="_blank"><i  style=" margin: 10%; color:white" class="fab fa-discord fa-2x"></i></a></div>
-                    <div id="hexagon"><a href="https://www.instagram.com/redmondstemcenter/" target="_blank"><i  style=" margin: 10%; color:white" class="fab fa-instagram fa-2x"></i></a></div>
-                </div>                    
-                </div>
-    </section>
-    <!--//contact-->
+    </div>
+  </header><!-- End Header -->
 
-    <!-- ******FOOTER****** -->
-    <footer class="footer">
-        <div class="container text-center">
-            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">© 2020 Redmond Stem Center </small>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h6 class="title">Redmond<span class="highlight"> STEM </span>Center</h6>
+      <p class="intro">An upcoming community youth makerspace in Redmond, WA</p>
+      <div class="row text-center">
+        <div class= "col-md-6">
+          <a class="btn-get-started scrollto" href="/project-proposal.pdf" style="white-space: nowrap;"target="_blank">PROJECT PROPOSAL</a>
         </div>
-        <!--//container-->
-    </footer>
-    <!--//footer-->
+        <div class= "col-md-6">
+          <a class="btn-get-started scrollto" href="/business-plan.pdf" target="_blank">BUSINESS PLAN</a>
+        </div>
+      </div>
+      
+    </div>
+  </section><!-- End Hero -->
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+  <main id="main">
 
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bgstyle">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <h2 style="color: #8EB897;">Who are we?</h2>
+            <div class="hexagon image"></div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              We're a group of high school students raising funds for a youth community maker space in the Redmond, WA area. Redmond Stem Center
+              would function as a hub for students to work, learn, and interact with industry
+              mentors and professionals. A few beneficiaries are listed below,
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Students in the Redmond area will have their STEM educational resources
+                expanded greatly, and be provided with opportunities for high level projects
+                and working with industry professionals</li>
+              <li><i class="ri-check-double-line"></i> The parents of those who participate in the Redmond STEM Center will have
+                the chance to witness the creative minds of their children at work, and the
+                center will also be an adult-supervised place that those who are busy with
+                work can leave their kids.
+                </li>
+              <li><i class="ri-check-double-line"></i> Younger kids will be greatly inspired by the work of the more experienced
+                students or mentors, through outreach events and community talks. Events
+                will also be regularly scheduled to allow those in elementary school and
+                middle school to participate in STEM center activities.</li>
+            </ul>
+            <p class="font-italic">
+              Learn more by reading our <a href="/project-proposal.pdf">Project Proposal</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bggreen">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Activities</h2>
+          <p>Some examples of activities that will be at the Redmond STEM Center are listed below.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-help-robot"></i></div>
+            <h4 class="title"><a >Host FIRST Robotics Team 7461</a></h4>
+            <p class="description">Founded in 2018, this award-winning Robotics team is open to all high school students, competing in the FIRST robotics competition. You can learn more on the team's <a href="https://sushisquad.org/" style="color: #2f4b35;">website</a>.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-rocket-alt-1"></i></div>
+            <h4 class="title"><a >Phoenix Rocketry Organization</a></h4>
+            <p class="description">Phoenix Rocketry Organization is a nonprofit team of dedicated high school students who are a regular participant in the American Rocketry Challenge (TARC), the world's largest model rocketry competition.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-computer"></i></div>
+            <h4 class="title"><a >Host STEM Based Classes</a></h4>
+            <p class="description">With connections to industry professionals, RSC will host classes in programming, CAD (computer aided design), shop tools, electronics, and more.</p>
+          </div>          
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-code"></i></div>
+            <h4 class="title"><a >Open Hack Nights</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-light-bulb"></i></div>
+            <h4 class="title"><a >Create new clubs and teams</a></h4>
+            <p class="description">In addition to the already existing robotics and rocketry teams, RSC will create and host more clubs and teams.</p>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+     <!-- ======= Events Section ======= 
+     <section id="events" class="about section-bgred">
+      <div class="container">
+        <div class="row content">
+          <div class="col-lg-6">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-2ffc199a-2378-441d-bc33-83decf186092"></div>  
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              We're a group of high school students raising funds for a youth community maker space in the Redmond, WA area. Redmond Stem Center
+              would function as a hub for students to work, learn, and interact with industry
+              mentors and professionals. A few beneficiaries are listed below,
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Students in the Redmond area will have their STEM educational resources
+                expanded greatly, and be provided with opportunities for high level projects
+                and working with industry professionals</li>
+              <li><i class="ri-check-double-line"></i> The parents of those who participate in the Redmond STEM Center will have
+                the chance to witness the creative minds of their children at work, and the
+                center will also be an adult-supervised place that those who are busy with
+                work can leave their kids.
+                </li>
+              <li><i class="ri-check-double-line"></i> Younger kids will be greatly inspired by the work of the more experienced
+                students or mentors, through outreach events and community talks. Events
+                will also be regularly scheduled to allow those in elementary school and
+                middle school to participate in STEM center activities.</li>
+            </ul>
+            <p class="font-italic">
+              Learn more by reading our <a href="/project-proposal.pdf">Project Proposal</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section> End Events Section -->
+
+    <!-- ======= Sponsor Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Sponsors</h2>
+          <p style="color: #171D21;">We are incredibly grateful to the following organizations that make RSC possible!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All Tiers</li>
+              <li data-filter=".filter-app">Arboretum Sponsors</li>
+              <li data-filter=".filter-card">Woodland Sponsors</li>
+              <li data-filter=".filter-web">Tree Sponsors</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Microsoft</h4>
+              <p> Arboretum Sponsor</p>
+              <a href="https://www.microsoft.com/" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-2.jpg.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Boeing</h4>
+              <p>Arboretum Sponsor</p>
+              <a href="https://www.boeing.com/" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-3.jpg.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Kelloggs</h4>
+              <p>Woodland Sponsor</p>
+              <a href="https://www.kelloggs.com/" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Ford</h4>
+              <p>Woodland Sponsor</p>
+              <a href="https://www.ford.com/" target="_blank"  class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Kars 4 Kids</h4>
+              <p>Tree Sponsor</p>
+              <a href="https://www.kars4kids.org/" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-6.jpg.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>American Eagle</h4>
+              <p>Seed Sponsor</p>
+              <a href="https://www.ae.com/" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+         
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bgdark">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 style="color: #8EB897;">Contact</h2>
+          <p>Send us a message, Join our Discord Server, or Check out our Instagram!</p>
+        </div>
+      </div>
+        
+      </div>
+      <div class="container">
+       
+              <div class="socials text-center">
+               
+                <div id="hexagon"><a href="mailto:contact@redmondstemcenter.org" target="_blank"><i style=" margin: 10%; color:white;" class="lni lni-envelope lni-32"></i></a></div>                   
+                <div id="hexagon"><a href="https://discord.gg/uPkteTG" target="_blank"><i  style=" margin: 10%; color:white" class="lni lni-discord lni-32"></i></a></div>
+                <div id="hexagon"><a href="https://www.instagram.com/redmondstemcenter/" target="_blank"><i  style=" margin: 10%; color:white" class="lni lni-instagram lni-32"></i></a></div>
+            </div>  
+        </div>
+
+      <div class="map">
+        <iframe style="margin-top: 5%; border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.9108794815197!2d-122.10868208436736!3d47.666727679188696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549072bc3ee13247%3A0xd5c6ad9f3522f87e!2s6855%20176th%20Ave%20NE%2C%20Redmond%2C%20WA%2098052!5e0!3m2!1sen!2sus!4v1602568277504!5m2!1sen!2sus" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    
+    <div class="container footer-bottom">
+      <div class="copyright">
+        <br>&copy; Copyright <strong><span>2020 Redmond Stem Center </span></strong>
+      </div>
+     
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
