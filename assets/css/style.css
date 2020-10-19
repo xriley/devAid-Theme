@@ -532,11 +532,6 @@ section {
   background-color: #171D21;
 }
 
-.section-bgstyle{
-  background: rgb(23,29,33);
-  background: linear-gradient(65deg, rgba(23,29,33,1) 20%, rgba(255,89,100,1) 20%, rgba(255,89,100,1) 23%, rgba(23,29,33,1) 23%, rgba(23,29,33,1) 44%, rgba(255,89,100,1) 44%, rgba(255,89,100,1) 47%, rgba(23,29,33,1) 47%);
-}
-
 .section-bggreen{
   background-color: #8EB897;
 }
@@ -586,7 +581,9 @@ section {
   font-size: 24px;
   color: #4d8090;
 }
-
+.about .img-fluid {
+  width: 90%;
+}
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -608,7 +605,11 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
-
+@media (max-width: 992px) {
+  .about .img-fluid{
+    width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
