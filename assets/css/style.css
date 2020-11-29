@@ -61,7 +61,7 @@ a:hover {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #85b0be;
+  background: #3D5366;
   color: #fff;
   transition: all 0.4s;
 }
@@ -75,6 +75,7 @@ a:hover {
 /*------------------------------------------------------------*/
 .socials div{
   display: inline-block;
+  margin-bottom: 6%;
 }
 .fab.fa-github, fa.fa-envelope, fab.fa-instagram{
   color: white;
@@ -88,7 +89,8 @@ a:hover {
 #hexagon {
   width: 100px;
 	height: 60px;
-	background: #114B5F;
+  background: #114B5F;
+  margin-bottom: 7.7%;
 	position: relative;
    top: 10px;
    text-align: center;
@@ -259,11 +261,11 @@ a:hover {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #3b626f;
+  color: #8EB897
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #85b0be;
+  color: #85be9f;
 }
 
 .nav-menu .drop-down > a:after {
@@ -329,8 +331,8 @@ a:hover {
   position: fixed;
   top: 55px;
   right: 15px;
-  bottom: 655px;
-  left: 300px;
+  bottom: 300px;
+  left: 200px;
   z-index: 9999;
   overflow-y: auto;
   background: #fff;
@@ -389,7 +391,7 @@ a:hover {
 .mobile-nav-overly {
   width: 100%;
   height: 100%;
-  z-index: 9997;
+  z-index: 9997;  
   top: 0;
   left: 0;
   position: fixed;
@@ -519,6 +521,43 @@ a:hover {
     line-height: 24px;
     margin-bottom: 30px;
   }
+  #hero {
+    width: 100%;
+    height: 80vh;
+    background: url("../img/Frame.svg") top center;
+    background-size: cover;  
+    position: relative;
+  }
+  .hero-container .title {
+    font-size: 50px;
+    font-family: "Wavehaus", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 4 0%;
+  }
+  
+.hero-container .intro {
+  font-size: 23px;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#hero .btn-get-started {
+  font-family: "Wavehaus", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 23px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  background-color: #8EB897;
+  border: 2px solid #85b0be00;
+  color: #fff;
+}
 }
 
 /*--------------------------------------------------------------
@@ -557,11 +596,32 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
+.gcalIframe{
+  width:80%;
+}
+.widgetHight{
+  width: 140%;
+}
+.insta{
+  margin-top: 0%;
+}
 @media (max-width: 992px) {
   .section-bgstyle{
     background: rgb(23,29,33);
    }
+   .widgetHight{
+     width: 100%;
+   }
+   .gcalIframe{
+    margin-left: 10%;
+    width:80%;
+  }
+  .insta{
+    margin-top: 5%;
+  }
 }
+
+
 
 /*--------------------------------------------------------------
 # About
@@ -588,6 +648,9 @@ section {
   list-style: none;
   padding: 0;
 }
+.aboutTitle{
+  text-align: unset;
+}
 
 .about .content ul li {
   padding: 10px 0 0 28px;
@@ -607,7 +670,13 @@ section {
 }
 @media (max-width: 992px) {
   .about .img-fluid{
-    width: 100%;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutTitle{
+    text-align: center;
   }
 }
 /*--------------------------------------------------------------
@@ -654,6 +723,7 @@ section {
   margin-left: 90px;
   line-height: 24px;
   font-size: 14px;
+  color: #052c3f;
 }
 
 .services .icon-box:hover .icon {
