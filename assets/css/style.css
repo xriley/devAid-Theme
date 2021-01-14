@@ -578,11 +578,12 @@ section {
   background-color: #171D21;
 }
 .section-bgblue {
-  background-color: #3D5366;
-  background-image: url("/assets/img/Screwdriver.svg"), url("/assets/img/Group7.svg");
-  background-position: left bottom, right top;
+  background: rgb(61,83,102);
+  background: url("/assets/img/Screwdriver.svg"), linear-gradient(140deg, rgba(61,83,102,1) 6%, rgba(23,29,33,1) 6%, rgba(23,29,33,1) 12%, rgba(61,83,102,1) 12%, rgba(61,83,102,1) 100%, rgba(61,83,102,1) 100%);
+
+  background-position: right bottom, center;
   background-repeat: no-repeat;
-  background-size: 20%;
+  background-size: 15%, 100%;
 }
 
 .section-bgpink {
@@ -627,6 +628,24 @@ section {
 .insta{
   margin-top: 0%;
 }
+.form{
+  background: rgb(23,29,33);
+  background: linear-gradient(90deg, rgba(23,29,33,1) 0%, rgba(23,29,33,1) 0%, rgba(23,29,33,1) 10%, rgba(255,89,100,1) 10%, 
+  rgba(255,89,100,1) 13%, rgba(23,29,33,1) 13%);
+  padding: 3%;
+  border: #FF5964 solid 3px;
+
+}
+@media (min-width: 2042px) {
+  .section-bgblue {
+    background: rgb(61,83,102);
+    background: url("/assets/img/Screwdriver.svg"), linear-gradient(140deg, rgba(61,83,102,1) 6%, rgba(23,29,33,1) 6%, rgba(23,29,33,1) 12%, rgba(61,83,102,1) 12%, rgba(61,83,102,1) 100%, rgba(61,83,102,1) 100%);
+  
+    background-position: right bottom, center;
+    background-repeat: no-repeat;
+    background-size: 12%, 100%;
+  }
+}
 @media (max-width: 992px) {
   .section-bgstyle{
     background: rgb(23,29,33);
@@ -662,6 +681,90 @@ section {
   }
   .insta{
     margin-top: 5%;
+  }
+}
+
+
+input[type=text], select, textarea{
+  width: 100%;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type=email], select, textarea{
+  width: 100%;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type=number], select, textarea{
+  width: 100%;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+label {
+  padding: 3px 0 8px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #3D5366;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 9px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  input[type=submit] {
+    background-color: #3D5366;
+    color: white;
+    margin: 10%;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
   }
 }
 
