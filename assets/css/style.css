@@ -437,6 +437,13 @@ a:hover {
   color: #FF5964;
 }
 
+.upcomingevent{
+  background: url("../img/Frame.svg");
+  background-size: cover;  
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
 .hero-container .intro {
   font-size: 28px;
   max-width: 680px;
@@ -570,6 +577,17 @@ section {
 .section-bgdark {
   background-color: #171D21;
 }
+.section-bgblue {
+  background-color: #3D5366;
+  background-image: url("/assets/img/Screwdriver.svg"), url("/assets/img/Group7.svg");
+  background-position: left bottom, right top;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+
+.section-bgpink {
+  background-color: #EAD7E1;
+}
 
 .section-bggreen{
   background-color: #8EB897;
@@ -577,6 +595,10 @@ section {
 
 .section-bgred{
   background-color: #FF5964;
+  background-image: url("/assets/img/lights.svg");
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .section-title {
@@ -609,6 +631,28 @@ section {
   .section-bgstyle{
     background: rgb(23,29,33);
    }
+   .section-bgred{
+    background-color: #FF5964;
+    background-image: url("/assets/img/lights.svg");
+    background-size: 0%;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .section-bgblue {
+    background-color: #3D5366;
+    background-image: url("/assets/img/Group7.svg");
+    background-size: 0%;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+  .section-bgdark {
+    background-color: #171D21;
+    background-image: url("/assets/img/blobby.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 0%;
+  }
+
    .widgetHight{
      width: 100%;
    }
