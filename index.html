@@ -111,29 +111,29 @@
             <script type="text/javascript">var submitted=false;</script>
      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"  onload="if(submitted)  {window.location='#events';}"></iframe>
             <div class="container">
-            <form class="form" method="post" target="hidden_iframe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd-OggtzBN7Ihm8uVqPDYRYOqkyeT7wbMiE0Wx0fPH5NC0RDw/formResponse" onSubmit="alert('Thank you for registering!');"  >
+            <form class="form" method="post" target="hidden_iframe" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwMu0XKxfW_3fRbR1KhbBMWvenBSM9RoMEwlWBvGH7Yx_LBA/formResponse" onSubmit="alert('Thank you for registering!');"  >
               <div class="row justify-content-center">
                <div class="col-lg-5">
-                   <label>Name</label>
+                   <label>Name *</label>
                 </div>
                 <div class="col-lg-5">
-                   <input name="entry.1900666781" type="text" required/>
+                   <input name="entry.252478920" type="text" required/>
                 </div>
                 </div>
                 <div class="row justify-content-center">
                   <div class="col-lg-5">
-                  <label>Email</label>
+                  <label>Email *</label>
                 </div>
                 <div class="col-lg-5">
-                  <input name="entry.507145489" type="email" required />
+                  <input name="entry.99445021" type="email" required />
                 </div>
               </div>              
               <div class="row justify-content-center">
                 <div class="col-lg-5">
-                  <label>Grade</label>
+                  <label>Grade *</label>
                 </div>
                 <div class="col-lg-5">
-                  <input name="entry.1404139485" type="number" required />
+                  <input name="entry.1355628136" type="number" required />
                 </div>
               </div>
               <div class="row justify-content-center">
@@ -142,17 +142,169 @@
                 </div>
                 <div class="row justify-content-center">
                   <div class="col-sm-6">
-                  <input type="radio" name="entry.1606203081" id="e1" value="No. I'd like to be put on a team."/>
+                  <input type="radio" name="entry.937263642" id="e1" data-toggle="modal" data-target="#noModal" value="No. I'd like to be put on a team."/>
                   <label for="e1">No. I would like one.</label>
                  </div>
                 <div class="col-sm-3">
-                  <input type="radio" name="entry.1606203081" id="e2" value="Yes"/>
+                  <input type="radio" name="entry.937263642" id="e2"data-toggle="modal" data-target="#yesModal" value="Yes"/>
                   <label for="e2">Yes</label>
                 </div>
-              </div>
-              <div class="row">
-                  <input type="submit" value="Register" />
-              </div>    
+              </div> 
+
+               <!-- Modal -->
+                <div id="noModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        
+                        <h4 class="modal-title" style="color:#FF5964;">Looking For a Team</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body" style="color: black;">
+                        <div class="container">
+                          <div class="row justify-content-center">
+                            <div class="col-lg-5">
+                                <label>Rate your CAD Experience from 1-5:</label>
+                             </div>
+                             <div class="col-lg-5">
+                                <input name="entry.683637338" type="number" /> 
+                             </div>
+                             </div>
+                             <div class="row justify-content-center">
+                               <div class="col-lg-5">
+                               <label>Age *</label>
+                             </div>
+                             <div class="col-lg-5">
+                               <input name="entry.178251998" type="text" />
+                             </div>
+                           </div>              
+                           <div class="row justify-content-center">
+                             <div class="col-lg-5">
+                               <label>School *</label>
+                             </div>
+                             <div class="col-lg-5">
+                               <input name="entry.1032039191" type="text"/>
+                             </div>
+                           </div>
+
+                           <div class="row justify-content-center">
+                            <div class="col-lg-1"></div>
+                              <label>How many hours can you devote to this competition throughout the weekend of February 6th/7th? *</label>
+                            </div>
+                            <div class="row justify-content-center">
+                              <div class="col-sm-6">
+                                <input name="entry.496900204" style="margin-bottom: 4%;" type="number"/>
+                             </div>                          
+                          
+                      </div>
+                      </div>
+                      <div class="modal-footer">
+                        <input type="submit" value="Register" />
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div id="yesModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        
+                        <h4 class="modal-title" style="color:#FF5964;">Team Registration</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body" style="color: black;">
+                        <div class="container">
+                          <div class="row justify-content-center">
+                            <div class="col-lg-5">
+                                <label>Team Member 1 Full Name: * </label>
+                             </div>
+                             <div class="col-lg-5">
+                                <input name="entry.1530383450" type="text" /> 
+                             </div>
+                             </div>
+                             <div class="row justify-content-center">
+                               <div class="col-lg-5">
+                               <label>Team Member 1 Grade: *</label>
+                             </div>
+                             <div class="col-lg-5">
+                               <input name="entry.976376410" type="number" />
+                             </div>
+                           </div>              
+                           <div class="row justify-content-center">
+                             <div class="col-lg-5">
+                               <label>Team Member 1 Email: *</label>
+                             </div>
+                             <div class="col-lg-5">
+                               <input name="entry.367835626" type="text"/>
+                             </div>
+                           </div>
+                           <hr class="solid">
+                           <label>(If applicable)</label>
+                           <div class="row justify-content-center">                             
+                            <div class="col-lg-5">
+                                <label>Team Member 2 Full Name: </label>
+                             </div>
+                             <div class="col-lg-5">
+                                <input name="entry.1184282145" type="text" /> 
+                             </div>
+                             </div>
+                             <div class="row justify-content-center">
+                               <div class="col-lg-5">
+                               <label>Team Member 2 Grade:</label>
+                             </div>
+                             <div class="col-lg-5">
+                               <input name="entry.581131507" type="number" />
+                             </div>
+                           </div>              
+                           <div class="row justify-content-center">
+                             <div class="col-lg-5">
+                               <label>Team Member 2 Email:</label>
+                             </div>
+                             <div class="col-lg-5">
+                               <input name="entry.919339419" type="text"/>
+                             </div>
+                           </div>
+                           <hr class="solid">
+                           <label>(If applicable)</label>
+                           <div class="row justify-content-center">
+                            <div class="col-lg-5">
+                                <label>Team Member 3 Full Name: </label>
+                             </div>
+                             <div class="col-lg-5">
+                                <input name="entry.211492480" type="text" /> 
+                             </div>
+                             </div>
+                             <div class="row justify-content-center">
+                               <div class="col-lg-5">
+                               <label>Team Member 3 Grade:</label>
+                             </div>
+                             <div class="col-lg-5">
+                               <input name="entry.2064278970" type="number" />
+                             </div>
+                           </div>              
+                           <div class="row justify-content-center">
+                             <div class="col-lg-5">
+                               <label>Team Member 3 Email:</label>
+                             </div>
+                             <div class="col-lg-5">
+                               <input name="entry.1262441530" style="margin-bottom: 4%;" type="text"/>
+                             </div>
+                           </div>                           
+                      <div class="modal-footer">
+                        <input type="submit" value="Register" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>           
+
+
         </form>
       </div>
             <h3 style="font-size: 3vh; color:#E5E5E5; margin-top: 5%;">Details</h3>

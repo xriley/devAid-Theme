@@ -727,6 +727,9 @@ input[type=submit] {
 table, th, td {
   border: 1px solid black;
 }
+hr.solid {
+  border-top: 1px solid #bbb;
+}
 
 
 /* Floating column for labels: 25% width */
