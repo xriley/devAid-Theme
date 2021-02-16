@@ -29,14 +29,26 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2DDY3BQ0JQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DDY3BQ0JQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-2DDY3BQ0JQ');
-</script>
+      gtag('config', 'G-2DDY3BQ0JQ');
+    </script> 
+    <!-- MailerLite Universal -->
+  <script>
+      (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+      var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+      f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+      var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+      _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+      
+      var ml_account = ml('accounts', '2899750', 'v7x0o3h6b0', 'load');
+  </script>
+    <!-- End MailerLite Universal -->
+  
 </head>
 
 <body>
@@ -58,7 +70,7 @@
           <li><a href="#events">Events</a></li>  
           <li><a href="#contact">Contact</a></li>          
           <li><a href="https://blog.redmondstemcenter.org/">Blog</a></li> 
-
+          <li><a href="javascript:;" onclick="ml_webform_3567916('show')">Newsletter</a></li> 
         </ul>
       </nav><!-- .nav-menu -->
   
@@ -487,7 +499,10 @@
 </footer><!-- End Footer -->
 
 <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
+<script>
+  var ml_webform_3567916 = ml_account('webforms', '3567916', 'l3k9n7', 'load');
+  ml_webform_3567916('animation', 'fadeIn');
+</script>
 <!-- Vendor JS Files -->
 <script src="assets/vendor/jquery/jquery.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
