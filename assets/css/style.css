@@ -199,6 +199,52 @@ a:hover {
   }
 }
 
+
+
+
+#headerbs {
+  z-index: 997;
+  transition: all 0.5s;
+  background:  #6fa47a;
+  padding: 20px 0;
+}
+
+#headerbs.headerbs-transparent {
+  background: rgb(14,17,19);
+}
+
+#headerbs.headerbs-scrolled {
+  background:#0e1113;
+  padding: 15px 0;
+}
+
+#headerbs .logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#headerbs .logo h1 a, #headerbs .logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#headerbs .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+@media (max-width: 768px) {
+  #headerbs .logo h1 {
+    font-size: 28px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -567,6 +613,166 @@ a:hover {
 }
 }
 
+
+
+
+#herobs {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.herobs-container .title {
+  font-size: 50px;
+  font-family: "Wavehaus", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.herobs-container .title .highlight {
+  color: #FF5964;
+}
+.herobs-container .intro {
+  font-size: 28px;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#herobs:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  
+  left: 0;
+  right: 0;
+}
+
+#herobs .herobs-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;  
+  right: 0;
+  background-color: #0e1113;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#herobs h1 {
+  margin: 0 0 15px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#herobs h2 {
+  color: #eee;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+#herobs .btn-get-started {
+  font-family: "Wavehaus", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  background-color: #8EB897;
+  border: 2px solid #85b0be00;
+  color: #fff;
+}
+
+#herobs .btn-get-started:hover {
+  background:#FF5964;
+}
+
+@media (min-width: 1024px) {
+  #herobs {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #herobs h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #herobs h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #herobs {
+    width: 100%;
+    height: 80vh;
+     
+    position: relative;
+  }
+  #herobs .herobs-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;  
+    right: 0;
+    background-color: #0e1113;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .herobs-container .title {
+    font-size: 50px;
+    font-family: "Wavehaus", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 4 0%;
+  }
+  
+.herobs-container .intro {
+  font-size: 23px;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#herobs .btn-get-started {
+  font-family: "Wavehaus", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 23px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  background-color: #8EB897;
+  border: 2px solid #85b0be00;
+  color: #fff;
+}
+}
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -785,6 +991,167 @@ hr.solid {
 }
 
 
+
+.one, .two, .three, .four, .five {
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+  overflow: hidden;
+  padding: 20px 50px 20px 70px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  position: relative;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: background-position .7s,box-shadow .4s;
+  transition: background-position .7s,box-shadow .4s;
+  background-size: 110%;
+  font-family: "Wavehaus", sans-serif;
+}
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
+  background-position: 0% 30%;
+}
+.one:hover:after, .two:hover:after, .three:hover:after, .four:hover:after, .five:hover:after {
+  right: -40px;
+  -webkit-transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear,-webkit-transform 30s .2s linear;
+}
+.one:before, .two:before, .three:before, .four:before, .five:before, .one:after, .two:after, .three:after, .four:after, .five:after {
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+}
+.one:before, .two:before, .three:before, .four:before, .five:before {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 30px;
+  left: 25px;
+  top: 19px;
+}
+.one:after, .two:after, .three:after, .four:after, .five:after {
+  -webkit-transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, transform .2s;
+  transition: right .4s, transform .2s, -webkit-transform .2s;
+  font-size: 100px;
+  opacity: .3;
+  right: -120px;
+  top: -17px;
+}
+
+
+.two {
+ 
+  background-color: #3D5366;
+}
+.two:hover {
+  box-shadow: 0px 0px 0px 2px rgba(150, 35, 35, 0) inset, 0px 0px 30px 0px #000000;
+}
+.two:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transform: rotate(1000deg);
+          transform: rotate(1000deg);
+}
+.two:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.two:after {
+  content: "🌐";
+}
+.two b {
+  color: #ffdab400;
+  font-weight: 700;
+}
+
+.three {
+ 
+  background-color: #FF5964;
+}
+.three:hover {
+  box-shadow: 0px 0px 0px 2px rgba(150, 35, 35, 0) inset, 0px 0px 30px 0px #000000;
+}
+.three:hover:after {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+          
+          -webkit-transform: rotate(-500deg);
+          transform: rotate(-500deg);
+  
+}
+.three:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.three:after {
+  content: "🚀";
+}
+.three b {
+  color: #ffdab400;
+  font-weight: 700;
+}
+
+.four {
+  background-color: #7B7B7B;
+}
+.four:hover {
+  box-shadow: 0px 0px 0px 2px rgba(150, 35, 35, 0) inset, 0px 0px 30px 0px #000000;
+}
+.four:hover:after {
+  -webkit-transform: rotate(3000deg);
+          transform: rotate(3000deg);
+}
+.four:hover:before {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.four:after{
+  content: "⚙️";
+}
+.four b {
+  color: #ffdab400;
+  font-weight: 700;
+}
+
+.five {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #DE3964;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DE3964), to(rgba(154, 40, 87, 0.24))), url("http://nightlifeassociates.com/wp-content/uploads/2014/03/hakkasan-nightclub_tiesto-smalls.jpg");
+  background-image: linear-gradient(to bottom, #DE3964, rgba(154, 40, 87, 0.24)), url("http://nightlifeassociates.com/wp-content/uploads/2014/03/hakkasan-nightclub_tiesto-smalls.jpg");
+}
+.five:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #DE3964;
+}
+.five:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.five:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.five:after, .five:before {
+  content: "";
+}
+.five b {
+  color: #F764FF;
+  font-weight: 700;
+}
+
+.containerwebdev{
+  margin:5% 0 5% 0;
+}
+
+.containerrocket{
+  margin:5% 0 5% 0;
+}
+.containerrobot{
+  margin:5% 0 5% 0;
+}
 
 /*--------------------------------------------------------------
 # About
