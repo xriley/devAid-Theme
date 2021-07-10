@@ -104,7 +104,7 @@
             <div class="iframe-container">
               <h4 style="color:#EAD7E1;">July 19th - 22nd from 9AM - 3PM</h4>
               <h6 style="color:white;">Located at the DigiPen Institute of Technology</h6>  
-              <button class='two' style="margin-top: 3%;" onclick="location.href='https://forms.gle/rhHVQX7bSw8YWN4b6';">Register for this camp!</button>
+              <button class='two' style="margin-top: 3%;"  data-toggle="modal" data-target="#campModal">Register for this camp!</button>
             </div>
             
         </div>
@@ -147,7 +147,7 @@
             <div class="iframe-container">
               <h4 style="color:#EAD7E1; text-align: right;">July 23rd - 26th from 9AM - 3PM</h4>
               <h6 style="color:white; text-align: right;">Located at the DigiPen Institute of Technology</h6>  
-              <button class='three' style="margin-top: 3%;" onclick="location.href='https://forms.gle/rhHVQX7bSw8YWN4b6';">Register for this camp!</button>
+              <button class='three' style="margin-top: 3%;" data-toggle="modal" data-target="#campModal">Register for this camp!</button>
             </div>
 
         </div>
@@ -165,7 +165,7 @@
             <div class="iframe-container">
               <h4 style="color:#EAD7E1;">August 16th - 20th from 9AM - 4PM</h4>
               <h6 style="color:white;">Located at the DigiPen Institute of Technology</h6>  
-              <button class='four' style="margin-top: 3%;" onclick="location.href='https://forms.gle/rhHVQX7bSw8YWN4b6';">Register for this camp!</button>
+              <button class='four' style="margin-top: 3%;"  data-toggle="modal" data-target="#campModal">Register for this camp!</button>
             </div>
             
         </div>
@@ -184,7 +184,35 @@
         </div>
       </div>
       </div>
-      
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="campModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" style="margin-right:2%;" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="color: #171D21;">Camp Registration</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdznYonMSsLUEkNLljGCkpP8z6_7hjDnpopxhOB5ibO3tuKLg/viewform?embedded=true" width="100%" height="2498" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <h2 style="text-align: center; margin:10%;">Payment</h2>
+          <div id="smart-button-container">
+            <div style="text-align: center;">
+              <div style="margin: 1.25rem;">
+                <select id="item-options"><option value="Web Development Camp" price="180">Web Development Camp - $180</option><option value="Rocketry Camp" price="200">Rocketry Camp - $200</option><option value="Robotics Camp" price="350">Robotics Camp - $350</option></select>
+              </div>
+            <div id="paypal-button-container"></div>
+            </div>  
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
       
     </section><!-- End About Section -->
@@ -275,6 +303,32 @@
 </main><!-- End #main -->
 
 
+<!-- Thank You Modal Summer Camps-->
+
+<div class="modal fade" id="thankModal" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" style="margin-right: 2%;"data-dismiss="modal" aria-label=""><span>×</span></button>
+         </div>
+
+        <div class="modal-body">
+                  
+        <div class="thank-you-pop">
+          <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+          <h1>Thank You!</h1>
+          <p>Check your email for our confirmation. We will be sending out more information about the camp as the date approaches.</p>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
 <!-- ======= Footer ======= -->
 <footer id="footer">
 
@@ -291,6 +345,64 @@
   var ml_webform_3567916 = ml_account('webforms', '3567916', 'l3k9n7', 'load');
   ml_webform_3567916('animation', 'fadeIn');
 </script>
+
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script>
+  ((containerId) => {
+    var itemOptions = document.querySelector("#item-options");
+    paypal.Buttons({
+      style: {
+        shape: 'rect',
+        color: 'gold',
+        layout: 'vertical',
+        label: 'pay',
+      },
+      createOrder: (data, actions) => {
+        var selectedItemPrice = parseInt(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+        return actions.order.create({
+          purchase_units: [{
+            description: "Item",
+            amount: {
+              currency_code: 'USD',
+              value: selectedItemPrice,
+              breakdown: {
+                item_total: {
+                  currency_code: 'USD',
+                  value: selectedItemPrice,
+                },
+                shipping: {
+                  currency_code: 'USD',
+                  value: 0,
+                },
+                tax_total: {
+                  currency_code: 'USD',
+                  value: 0,
+                }
+              }
+            },
+            items: [{
+              name: itemOptions.options[itemOptions.selectedIndex].value,
+              unit_amount: {
+                currency_code: 'USD',
+                value: selectedItemPrice,
+              },
+              quantity: 1
+            }]
+          }]
+        });
+      },
+      onApprove: (data, actions) => {
+        return actions.order.capture().then((details) => {
+          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+        });
+      },
+      onError: (err) => {
+        console.log(err);
+      },
+    }).render(containerId);
+  })('#paypal-button-container');
+</script>
+
 <!-- Vendor JS Files -->
 <script src="assets/vendor/jquery/jquery.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
