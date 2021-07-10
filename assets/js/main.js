@@ -34,13 +34,6 @@
       }
     }
   });
-  $(document).ready(function() {
-
-    if(window.location.href.indexOf('#thankModal') != -1) {
-      $('#thankModal').modal('show');
-    }
-  
-  });
 
   // Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
