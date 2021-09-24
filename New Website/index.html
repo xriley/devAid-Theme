@@ -23,61 +23,58 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DDY3BQ0JQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2DDY3BQ0JQ');
+  </script> 
+  <!-- MailerLite Universal -->
+<script>
+  (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+  var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+  f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+  var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+  _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+  
+  var ml_account = ml('accounts', '2899750', 'v7x0o3h6b0', 'load');
+  </script>
+  <!-- End MailerLite Universal -->
+
+  <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Ninestars - v4.3.0
-  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>RSC</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <div class="logo mr-auto">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="nav-menu navbar nav-menuW">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Activities</a></li>
+        <!--  <li><a href="#portfolio">Sponsors</a></li> -->    
+          <li><a href="#events">Events</a></li>  
+          <li><a href="#contact">Contact</a></li>              
+          <li><a href="https://blog.redmondstemcenter.org/">Blog</a></li> 
+          <li><a href="#newsletterSign">Newsletter</a></li> 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
+      </nav><!-- .nav-menu -->
+  
+      </div>
   </header><!-- End Header -->
   <section id="head">
     <div class="keyart" id="nonparallax">
@@ -121,44 +118,62 @@
   </section> End Hero -->
 
   <main id="main">
-
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row justify-content-between">
-          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-            <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
-          </div>
-          <div class="col-lg-6 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">Voluptatem dignissimos provident quasi</h3>
-            <p data-aos="fade-up" data-aos-delay="100">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-            </p>
-            <div class="row">
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-receipt"></i>
-                <h4>Corporis voluptates sit</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+    <section id="about" class="about overlay">
+      <div class="aboutcontainer" style="margin-bottom: 50px;">
+        <div class="container" style="margin-top: 100px;">    
+          <div class="row justify-content-between">
+            <div class="col-lg-7 d-flex align-items-center justify-content-center about-img">
+              <div class="containerVid">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/8oBQLUf784I" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-cube-alt"></i>
-                <h4>Ullamco laboris nisi</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              </div>
+            </div>
+            <div class="col-lg-5 pt-5 pt-lg-0">
+              <h3 data-aos="fade-up">WHO ARE WE?</h3>
+              <hr data-aos="fade-up" style="width:100%;text-align:left; color: #F2F5EA;">
+              <p data-aos="fade-up" data-aos-delay="100">
+                We're a group of high school students raising funds for a <a style="color:white">youth community maker space</a> in the Redmond, WA area.
+                </p> 
+              <p  data-aos="fade-up" data-aos-delay="100"><b><a style="color:#F2F5EA">Redmond</a> <a style="color:#FF5964">STEM</a> <a style="color:#F2F5EA">Center</a></b> would function as a hub for students to work, learn, and interact with industry mentors and professionals. Watch the video to learn more about us!
+              </p>
+            <div class="centered-container" data-aos="fade-up" data-aos-delay="200"> 
+            <a class="link link--arrowed" href="#about">Click to see more
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" >
+                <g fill="none" stroke="#FF5964" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                  <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                  <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                </g>
+              </svg></a></div>
+             <!-- <div class="row">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Corporis voluptates sit</h4>
+                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Ullamco laboris nisi</h4>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                </div>
+              </div>-->
             </div>
           </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
-
+    </section><!-- End About Section 
+    <div class="sectionBorder"></div>-->
+    <div class="headerB">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#F2F5EA" points="0,100 100,0 100,100"/>
+      </svg>
+    </div>
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services</h2>
+          <h3>Services</h3>
           <p>Check out the great services we offer</p>
         </div>
 
@@ -199,13 +214,17 @@
 
       </div>
     </section><!-- End Services Section -->
-
+    <div class="headerW">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#F2F5EA" points="0,100 100,0 100,100"/>
+      </svg>
+    </div>
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h3>Portfolio</h3>
           <p>Check out our beautifull portfolio</p>
         </div>
 
@@ -352,13 +371,17 @@
 
       </div>
     </section><!-- End Portfolio Section -->
-
+    <div class="headerB">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#F2F5EA" points="0,100 100,0 100,100"/>
+      </svg>
+    </div>
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>F.A.Q</h2>
+          <h3>F.A.Q</h3>
           <p>Frequently Asked Questions</p>
         </div>
 
@@ -422,14 +445,18 @@
 
       </div>
     </section><!-- End F.A.Q Section -->
-
+    <div class="headerW">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#F2F5EA" points="0,100 100,0 100,100"/>
+      </svg>
+    </div>
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Team</h2>
-          <p>Our team is always here to help</p>
+          <h2 style="color: #F2F5EA;">Team</h2>
+          <p style="color: #F2F5EA;">Our team is always here to help</p>
         </div>
 
         <div class="row">
@@ -516,20 +543,20 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Clients</h2>
-          <p>They trusted us</p>
+          <h3>Our Sponsors</h3>
+          <p>Thank you to all our amazing sponsors for making RSC possible!</p>
         </div>
-
         <div class="clients-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" onclick="open1()" onclick="open1()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" onclick="open2()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" onclick="open3()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" onclick="open4()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" onclick="open5()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" onclick="open6()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" onclick="open7()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" onclick="open8()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-9.png" onclick="open9()" class="img-fluid" alt=""></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -537,12 +564,12 @@
       </div>
     </section><!-- End Clients Section -->
 
-    <!-- ======= Contact Us Section ======= -->
+    <!-- ======= Contact Us Section ======= 
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact Us</h2>
+          <h3>Contact Us</h3>
           <p>Contact us the get started</p>
         </div>
 
@@ -605,23 +632,32 @@
         </div>
 
       </div>
-    </section><!-- End Contact Us Section -->
+    </section> End Contact Us Section -->
 
-  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-newsletter">
+   <!-- <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4 style="color:#F2F5EA">Join Our Newsletter</h4>
+            <p style="color:#F2F5EA">Stay updated on upcoming events and important RSC news!</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" placeholder="Enter your email"name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
+        </div>
+      </div>
+    </div>-->
+    <div class="footer-newsletter" id="newsletterSign">
+      <div class="container">
+        <div class="row justify-content-center fRows">
+          <div class="ml-form-embed"
+           data-account="2899750:v7x0o3h6b0"
+           data-form="4743443:a3a2t0">
+        </div>
         </div>
       </div>
     </div>
@@ -631,64 +667,69 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Ninestars</h3>
+            <h3>Redmond STEM Center</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              An upcoming community youth makerspace in 
+              Redmond, Washington.<br>
+              Exciting things are coming soon! <br><br>  
             </p>
+            <img class="img-fluid" width="90%" src="../New Website/assets/img/logo.png">
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Events</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">RSC Blog</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Get Involved</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Donate</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Apply to mentor</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Apply to join the team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Partnership Inquiries</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <h4>Our Socials</h4>
+              <p>Follow our pages to stay updated!</p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/redmondstemcenter" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/redmondstemcenter/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCM7_Kr-uNFtEhmt2rVCitRg" target="_blank" class="google-plus"><i class="bx bxl-youtube"></i></a>
+                <a href="https://www.twitch.tv/redmondstemcenter" target="_blank" class="linkedin"><i class="bx bxl-twitch"></i></a>
+                <a href="https://www.linkedin.com/company/redmond-stem-center/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            <div class="footer-contact" style="margin-top: 20px;">
+              <p>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> <a target="_blank" href="mailto:info@redmondstemcenter.org">info@redmondstemcenter.org</a><br>
+              </p>
             </div>
-          </div>
-
         </div>
       </div>
     </div>
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Ninestars</span></strong>. All Rights Reserved
+        &copy; 2021 <strong><span>Redmond Robotics</span></strong>. All Rights Reserved
       </div>
       
     </div>
   </footer><!-- End Footer -->
-
+</main><!-- End #main -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <script>
+    var ml_webform_3567916 = ml_account('webforms', '3567916', 'l3k9n7', 'load');
+    ml_webform_3567916('animation', 'fadeIn');
+  </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

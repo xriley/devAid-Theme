@@ -45,7 +45,7 @@
    */
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
-    let position = window.scrollY + 200
+    let position = window.scrollY + 100
     navbarlinks.forEach(navbarlink => {
       if (!navbarlink.hash) return
       let section = select(navbarlink.hash)
@@ -65,7 +65,7 @@
    */
   const scrollto = (el) => {
     let header = select('#header')
-    let offset = header.offsetHeight
+    let offset = header.offsetHeight - 15;
 
     let elementPos = select(el).offsetTop
     window.scrollTo({
@@ -78,12 +78,20 @@
    * Back to top button
    */
   let backtotop = select('.back-to-top')
+  let headerC = select('#header')
+  let navMen = select('navbar')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
         backtotop.classList.add('active')
+        headerC.classList.add('header-scrolled');
+        navMen.classList.add('nav-menuW');
+        navMen.classList.remove('nav-menuB');
       } else {
         backtotop.classList.remove('active')
+        headerC.classList.remove('header-scrolled');
+        navMen.classList.add('nav-menuB');
+        navMen.classList.remove('nav-menuW');
       }
     }
     window.addEventListener('load', toggleBacktotop)
@@ -110,7 +118,7 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -126,6 +134,8 @@
       scrollto(this.hash)
     }
   }, true)
+
+  
 
   /**
    * Scroll with ofset on page load with hash links in the url
@@ -168,6 +178,7 @@
     }
 
   });
+
 
   /**
    * Initiate portfolio lightbox 
@@ -215,15 +226,15 @@
         spaceBetween: 40
       },
       480: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 60
       },
       640: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 80
       },
       992: {
-        slidesPerView: 6,
+        slidesPerView: 4,
         spaceBetween: 120
       }
     }
@@ -264,3 +275,31 @@ function castParallax() {
 }
 
 document.body.onload = castParallax();
+
+function open1() {
+  window.open('https://www.rocket.com/', '_blank');
+}
+function open2() {
+  window.open('https://www.harborfreight.com/', '_blank');
+}
+function open3() {
+  window.open('https://www.microsoft.com/en-us/', '_blank');
+}
+function open4() {
+  window.open('https://oneredmond.org/', '_blank');
+}
+function open5() {
+  window.open('https://careerconnectwa.org/', '_blank');
+}
+function open6() {
+  window.open('https://washingtonstem.org/', '_blank');
+}
+function open7() {
+  window.open('https://www.lowes.com/', '_blank');
+}
+function open8() {
+  window.open('https://www.costco.com/', '_blank');
+}
+function open9() {
+  window.open('https://www.digipen.edu/', '_blank');
+}
