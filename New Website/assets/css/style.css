@@ -769,6 +769,17 @@ section {
    transform: scaleX(-1) rotate(180deg);
   background-color:#171D21;
 }
+
+.headerF {
+  position: relative;
+  height: 100px;
+  background-color:#ffffff;
+}
+.headerE {
+  position: relative;
+  height: 100px;
+  background-color:#171D21;
+}
 svg {
   position: absolute;
   bottom: 0;
@@ -905,7 +916,7 @@ svg {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  color: #212529;
+  color:#F2F5EA;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
