@@ -25,6 +25,29 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
+  <!-- Calendar-->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          themeSystem: "standard",
+          initialView: 'listMonth',
+          headerToolbar : {
+            start: '', // will normally be on the left. if RTL, will be on the right
+            center: '',
+            end: '' // will normally be on the right. if RTL, will be on the left
+            },googleCalendarApiKey: 'AIzaSyDrbMA9lnLtVGBZzX8xmst1EPKWyRxNL_A',
+  events: {
+    googleCalendarId: 'c_j4q9pt6nv51l6butkb4h8ojrdg@group.calendar.google.com'
+  }
+        });
+        calendar.render();
+      });
+
+    </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DDY3BQ0JQ"></script>
   <script>
@@ -47,7 +70,7 @@
   <!-- End MailerLite Universal -->
 
   <!-- Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -234,7 +257,8 @@
           <h3 style="color:#F2F5EA">Events</h3>
           <p style="color:#F2F5EA">Check out our upcoming events!</p>
         </div>
-        <h3 style="text-align: center; color: white;"><i class='bx bxs-calendar-x'></i> There are no upcoming events at this time.</h2>
+        <!-- <h3 style="text-align: center; color: white;"><i class='bx bxs-calendar-x'></i> There are no upcoming events at this time.</h2> -->
+        <div id='calendar' style="color: #FF5964;"></div>
 
       </div>
     </section><!-- End Events Section -->
