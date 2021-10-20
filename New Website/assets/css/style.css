@@ -1844,7 +1844,6 @@ svg {
   width: 50%;
   margin: auto;
   display: flex;
-  height: fit-content;
   justify-content: center;
   padding: 30px;
 }
@@ -1855,5 +1854,17 @@ svg {
 
 .fc-cell-shaded {
   border: white solid;
-  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 4px;
+}
+
+.fc-list-day-text,
+.fc-list-day-side-text {
+  color: black;
+}
+
+.fc-list-day-text:hover,
+.fc-list-day-side-text:hover {
+  color: black;
 }
