@@ -1834,22 +1834,54 @@ svg {
     padding: 3px 0;
   }
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ff5964 #f7f7f7;
+  }
 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #f7f7f7;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff5964;
+    border-radius: 15px;
+    border: 3px solid #ffffff;
+  }
 /* calendar */
 
 #calendar {
   font-family: "Wavehaus", sans-serif;
   font-size: x-large;
   color: #171d21;
-  width: 50%;
-  margin: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 30px;
+  margin-bottom: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .fc-list-day-side-text {
   margin: 30px;
+}
+.fc tr, .fc td, .fc th, .fc tbody{
+  margin-bottom:20px;
+  width: 100vw;
+}
+.fc tr:hover , .fc td:hover , .fc th:hover{
+  background-color: rgba(56, 56, 56, 0.247);
 }
 
 .fc-cell-shaded {
@@ -1859,9 +1891,15 @@ svg {
   padding: 4px;
 }
 
-.fc-list-day-text,
+.fc-list-day-text{
+  color: black;
+  width: 1fr;
+  margin: auto;
+}
 .fc-list-day-side-text {
   color: black;
+  width: 10%;
+  margin-left: 20%;
 }
 
 .fc-list-day-text:hover,
