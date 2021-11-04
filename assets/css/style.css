@@ -895,6 +895,16 @@ svg {
   display: inline-block;
   position: relative;
 }
+.aboutHead::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: -35vh;
+  left: 0;
+  width: 400vh;
+  background: #171d21;
+  transform: skew(-87deg);
+}
 .aboutHead img {
   display: inline-block;
   width: 150%;
@@ -904,8 +914,9 @@ svg {
 }
 .abouthero-text {
   height: fit-content;
-  text-align: center;
-  width: 100%;
+  text-align: right;
+  padding-left:40px;
+  padding-right:9vw;
 }
 .abouthero-text h2 {
   margin-top: 2%;
@@ -998,6 +1009,65 @@ svg {
   background: #ff5964;
   border-color: #ff5964 !important;
   transition: all 0.4s ease 0s;
+}
+
+.image-list-small {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 640px;
+  padding: 0;
+}
+
+.image-list-small li {
+  display: inline-block;
+  width: 181px;
+  margin: 0 12px 30px;
+}
+
+
+/* Photo */
+
+.image-list-small li > a {
+  display: block;
+  text-decoration: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 137px;
+  margin: 0;
+  padding: 0;
+  border: 4px solid #ffffff;
+  outline: 1px solid #d0d0d0;
+  box-shadow: 0 2px 1px #DDD;
+}
+
+.image-list-small .details {
+  margin-top: 13px;
+}
+
+
+/* Title */
+
+.image-list-small .details h3 {
+  display: block;
+  font-size: 12px;
+  margin: 0 0 3px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.image-list-small .details h3 a {
+  color: #303030;
+  text-decoration: none;
+}
+
+.image-list-small .details .image-author {
+  display: block;
+  color: #717171;
+  font-size: 11px;
+  font-weight: normal;
+  margin: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1384,6 +1454,11 @@ svg {
   margin-bottom: 2px;
   font-size: 18px;
   color: #fff;
+}
+
+.member-info-content h4, span{
+  padding-top: 10px;
+  color: white;
 }
 
 .team .member .member-info-content span {
@@ -1814,6 +1889,10 @@ svg {
   float: left;
 }
 
+#footer .copyright span{
+  color: #000;
+}
+
 #footer .credits {
   float: right;
   text-align: center;
@@ -1838,7 +1917,7 @@ svg {
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #ff5964 #f7f7f7;
+    scrollbar-color: #171d21 #f7f7f7;
   }
 
   /* Chrome, Edge, and Safari */
@@ -1848,12 +1927,13 @@ svg {
 
   *::-webkit-scrollbar-track {
     background: #f7f7f7;
+    border-radius: 20px;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #ff5964;
-    border-radius: 15px;
-    border: 3px solid #ffffff;
+    background-color: #2a3a49;
+    border-radius: 10px;
+    border: 3px solid #f7f7f7;
   }
 /* calendar */
 
@@ -1861,45 +1941,64 @@ svg {
   font-family: "Wavehaus", sans-serif;
   font-size: x-large;
   color: #171d21;
-  width: 100%;
+  width: fit-content;
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
   margin-bottom: 8%;
   margin-left: auto;
   margin-right: auto;
   height: 50vh;
   overflow-y: auto;
   overflow-x: hidden;
+  
 }
 
-.fc-list-day-side-text {
-  margin: 30px;
+.fc tr{
+  margin-bottom:20px; 
 }
-.fc tr, .fc td, .fc th, .fc tbody{
+.fc td{
   margin-bottom:20px;
-  width: 100vw;
+  padding-left: 10px;
+  width: fit-content;
+  height:10vh;
 }
-.fc tr:hover , .fc td:hover , .fc th:hover{
-  background-color: rgba(56, 56, 56, 0.247);
+.fc th{
+  width: 30vw;
+  margin-bottom:20px;
+  
 }
-
+.fc tbody{
+  margin-bottom:20px;
+}
+.fc tr:hover{
+  background-color: rgba(0, 0, 0, 0.247);
+}
 .fc-cell-shaded {
-  border: white solid;
-  border-radius: 5px;
-  background-color: white;
+  border-bottom: #3d5366 solid 5px;
+  border-top: #8eb897 solid 5px;
+  border-radius: 10px;
+  height: 10vh;
+  background: rgb(242,245,234);
+  background: linear-gradient(180deg, rgba(242,245,234,1) 55%, rgba(255,255,255,1) 55%);
   padding: 4px;
 }
-
+.fc-list-event-time{
+  font-size: 20px;
+  width: 50%;
+}
 .fc-list-day-text{
   color: black;
-  width: 1fr;
-  margin: auto;
+  float: left;
+  width: 100%;
 }
 .fc-list-day-side-text {
   color: black;
-  width: 10%;
-  margin-left: 20%;
+  float: left;
+  width: 25%;
+  margin-right: 100%;
 }
 
 .fc-list-day-text:hover,
