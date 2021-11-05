@@ -1422,7 +1422,11 @@ svg {
   background: #171d21;
   padding: 60px 0;
 }
-
+.teamRow{
+  padding-left: 10%;
+  padding-top: 3%;
+  padding-right: 10%;
+}
 .team .member {
   text-align: center;
   margin-bottom: 20px;
