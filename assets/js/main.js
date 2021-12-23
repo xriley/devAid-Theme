@@ -280,7 +280,7 @@ function open1() {
   window.open('https://www.rocket.com/', '_blank');
 }
 function open2() {
-  window.open('https://www.harborfreight.com/', '_blank');
+  window.open('https://about.facebook.com/meta/', '_blank');
 }
 function open3() {
   window.open('https://www.microsoft.com/en-us/', '_blank');
