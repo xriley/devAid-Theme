@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap 4 Theme for Developers</title>
+    <title>DevAid - Bootstrap 5 Theme for Developers</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,42 +38,38 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     
     <!-- ******HEADER****** --> 
-    <header id="header" class="header">  
-        <div class="container">            
-            <h1 class="logo float-left">
-                <a class="scrollto" href="#promo">
-                    <span class="logo-title">devAid</span>
-                </a>
-            </h1><!--//logo-->              
-            <nav id="main-nav" class="main-nav navbar-expand-md float-right" role="navigation">
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button><!--//nav-toggle-->
-                           
-                <div class="navbar-collapse collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item sr-only"><a class="nav-link scrollto" href="#promo">Home</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#features">Features</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#docs">Docs</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#license">License</a></li>                        
-                        <li class="nav-item last"><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    </ul><!--//nav-->
-                </div><!--//navabr-collapse-->
-            </nav><!--//main-nav-->
-        </div>
+    <header id="header" class="header">                          
+        <nav id="main-nav" class="main-nav navbar navbar-expand-md">
+            <div class="container-fluid">
+            <a class="navbar-brand logo scrollto" href="#promo">
+                <span class="logo-title">devAid</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"  aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button><!--//nav-toggle-->
+                       
+            <div class="navbar-collapse collapse" id="navbar-collapse">
+                <ul id="nav-menu" class="nav navbar-nav ms-md-auto">
+                    <li class="nav-item sr-only"><a class="nav-link scrollto" href="#promo">Home</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#docs">Docs</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#license">License</a></li>                        
+                    <li class="nav-item last"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+            </div>
+        </nav><!--//main-nav-->
     </header><!--//header-->
     
     <!-- ******PROMO****** -->
     <section id="promo" class="promo section offset-header">
         <div class="container text-center">
             <h2 class="title">dev<span class="highlight">Aid</span></h2>
-            <p class="intro">A free Bootstrap 4 template designed to help developers
-promote their personal projects</p>
+            <p class="intro">A free Bootstrap 5 template designed to help developers promote their personal projects</p>
             <div class="btns">
                 <a class="btn btn-cta-secondary" href="https://themes.3rdwavemedia.com/" target="_blank">Demo</a>
                 <a class="btn btn-cta-primary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devaid-free-bootstrap-theme-for-developers-side-projects/" target="_blank">Download</a>
@@ -81,7 +77,7 @@ promote their personal projects</p>
             <ul class="meta list-inline">
                 <li class="list-inline-item"><a href="https://github.com/xriley/devAid-Theme" target="_blank">View on GitHub</a></li>
                 <li class="list-inline-item"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devaid-free-bootstrap-theme-for-developers-side-projects/" target="_blank">Full Documentation</a></li>
-                <li class="list-inline-item">Created by: <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> at 3rd Wave Media</li>
+                <li class="list-inline-item">Created by: <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devaid-free-bootstrap-theme-for-developers-side-projects/" target="_blank">Xiaoying Riley</a></li>
             </ul><!--//meta-->
         </div><!--//container-->
         <div class="social-media">
@@ -95,7 +91,7 @@ promote their personal projects</p>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                     </li><!--//twitter-tweet-->
                     <li class="list-inline-item facebook-like">
-                         <div class="fb-like" data-href="https://themes.3rdwavemedia.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                         <div class="fb-like" data-href="https://themes.3rdwavemedia.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
                     </li><!--//facebook-like-->
                     <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
                     <li class="list-inline-item github-star">
@@ -115,57 +111,56 @@ promote their personal projects</p>
             <div class="row">
                 <div class="item col-lg-4 col-md-6 col-12">
                     <div class="icon-holder">
-                        <i class="fas fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
                     </div>
                     <div class="content">
                         <h3 class="sub-title">Designed for developers</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 1000+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 8000+ <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> icons available.</p>
                     </div><!--//content-->
                 </div><!--//item-->
                 <div class="item col-lg-4 col-md-6 col-12">
                     <div class="icon-holder">
-                        <i class="far fa-clock"></i>
+                        <i class="fa-solid fa-clock"></i>
                     </div>
                     <div class="content">
                         <h3 class="sub-title">Time saver</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 1000+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 8000+ <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> icons available.</p>
                     </div><!--//content-->
                 </div><!--//item-->
                 <div class="item col-lg-4 col-md-6 col-12">
                     <div class="icon-holder">
-                        <i class="fas fa-crosshairs"></i>
+                        <i class="fa-solid fa-crosshairs"></i>
                     </div>
                     <div class="content">
                         <h3 class="sub-title">UX-centred</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 1000+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 8000+ <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> icons available.</p>
                     </div><!--//content-->
-                </div><!--//item-->           
-                <div class="clearfix visible-md"></div>    
+                </div><!--//item-->            
                 <div class="item col-lg-4 col-md-6 col-12">
                     <div class="icon-holder">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fa-solid fa-mobile-alt"></i>
                     </div>
                     <div class="content">
                         <h3 class="sub-title">Mobile-friendly</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 1000+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 8000+ <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> icons available.</p>
                     </div><!--//content-->
                 </div><!--//item-->                
                 <div class="item col-lg-4 col-md-6 col-12">
                     <div class="icon-holder">
-                        <i class="fas fa-code"></i>
+                        <i class="fa-solid fa-code"></i>
                     </div>
                     <div class="content">
                         <h3 class="sub-title">Easy to customise</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 1000+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 8000+ <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> icons available.</p>
                     </div><!--//content-->
                 </div><!--//item-->
                 <div class="item col-lg-4 col-md-6 col-12">
                     <div class="icon-holder">
-                        <i class="fas fa-coffee"></i>
+                        <i class="fa-solid fa-coffee"></i>
                     </div>
                     <div class="content">
                         <h3 class="sub-title">SCSS source files included</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 1000+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 8000+ <a href="https://fontawesome.com/" target="_blank">FontAwesome</a> icons available.</p>
                     </div><!--//content-->
                 </div><!--//item-->               
             </div><!--//row-->            
@@ -177,13 +172,13 @@ promote their personal projects</p>
         <div class="container text-center">
             <h2 class="title">Features</h2>
             <ul class="feature-list list-unstyled">
-                <li><i class="fas fa-check"></i> Fully responsive</li>
-                <li><i class="fas fa-check"></i> HTML5 + CSS3</li>
-                <li><i class="fas fa-check"></i> Built on Bootstrap 4</li>
-                <li><i class="fas fa-check"></i> SCSS source files included</li>
-                <li><i class="fas fa-check"></i> 1000+ FontAwesome 5 icons</li>
-                <li><i class="fas fa-check"></i> 4 colour schemes</li>
-                <li><i class="fas fa-check"></i> Compatible with all modern browsers</li>
+                <li><i class="fa-solid fa-check"></i> Fully responsive</li>
+                <li><i class="fa-solid fa-check"></i> HTML5 + CSS3</li>
+                <li><i class="fa-solid fa-check"></i> Built on Bootstrap 5</li>
+                <li><i class="fa-solid fa-check"></i> SCSS source files included</li>
+                <li><i class="fa-solid fa-check"></i> FontAwesome icons</li>
+                <li><i class="fa-solid fa-check"></i> 4 colour schemes</li>
+                <li><i class="fa-solid fa-check"></i> Compatible with all modern browsers</li>
             </ul>
         </div><!--//container-->
     </section><!--//features-->
@@ -221,8 +216,7 @@ promote their personal projects</p>
                     <pre>
     <code class="language-css">
     /*   
-     * Template Name: devAid - Bootstrap 4 theme for developers
-     * Version: 2.0
+     * Template Name: devAid - Bootstrap 5 theme for developers
      * Author: Xiaoying Riley at 3rd Wave Media
      * Website: https://themes.3rdwavemedia.com/
      * Twitter: @3rdwave_themes
@@ -306,7 +300,6 @@ promote their personal projects</p>
                         </div><!--//source-->
                     </div><!--//speech-bubble-->                        
                 </div><!--//author-message-->
-                <div class="clearfix"></div>
                 <div class="info text-center">
                     <h4 class="sub-title">Get Connected</h4>
                     <ul class="social-icons list-inline">
@@ -326,17 +319,15 @@ promote their personal projects</p>
     <footer class="footer">
         <div class="container text-center">
             <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
      
     <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>   
-    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
-    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
-    <script type="text/javascript" src="assets/js/main.js"></script>  
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script src="assets/plugins/prism/prism.js"></script>    
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/main.js"></script>  
     
         
 </body>

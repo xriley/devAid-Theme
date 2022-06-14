@@ -29,7 +29,7 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 
 ## Latest Version
-**v2.2** - 12 Oct 2020
+**BS5 v1.0** - 2022-06-14
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/startup/devaid-free-bootstrap-theme-for-developers-side-projects/?target=changelog)
 
@@ -52,13 +52,13 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 -  Fully Responsive
 -  HTML5 + CSS3
--  Built on Bootstrap 4
+-  Built on Bootstrap 5
 -  **SCSS** source files included
--  1000+ FontAwesome icons
+-  FontAwesome icons
 
 
 ## Credits
 - [Bootstrap](http://getbootstrap.com/)
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
-- [jQuery](http://jquery.com/)
+- [FontAwesome](https://fontawesome.com/)
+- [Gumshoe](https://github.com/cferdinandi/gumshoe)
 - [PrismJS](http://prismjs.com/)

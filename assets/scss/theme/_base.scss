@@ -27,6 +27,7 @@ a {
     font-family: 'Montserrat', arial, sans-serif;
     padding: 8px 16px;
     font-weight:bold;
+    text-decoration: none;
     .svg-inline--fa {
         margin-right: 5px;
     }
@@ -78,7 +79,7 @@ pre code {
         
 /* ======= Header ======= */
 .header {
-    padding: 10px 0;
+    //padding: 10px 0;
     background: $color;
     color: #fff;
     position: fixed;
@@ -88,10 +89,10 @@ pre code {
         background: #fff;
         z-index: 9999;
         @include box-shadow (0 0 4px rgba(0,0,0,0.4));
+        height: 70px;
         .logo {
-            a {
-                color: $color;
-            }
+            color: $color;
+           
         }
 
     }
@@ -99,13 +100,14 @@ pre code {
     .logo {
         margin: 0;
         font-size: 26px;
-        padding-top: 10px;
-        a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        
             color:#fff;
             &:hover {
                 text-decoration: none;
             }
-        }
+        
     }
     .main-nav {      
         
@@ -123,6 +125,7 @@ pre code {
 	        right:10px;
 	        top: 10px;
 	        background: darken($color, 30%);
+	        @include box-shadow(none);
 	        
 	        &:focus {
 	            outline: none;
@@ -155,10 +158,8 @@ pre code {
                     @include transition (none);
                     font-size: 14px;
                     padding: 15px 10px;
-                    &.active {
-	                    color: $color;
-	                    background: none;
-	                }
+                    text-decoration: none;
+ 
                     &:hover {  
                         color: darken($color, 30%);    
                         background: none;             
@@ -171,7 +172,15 @@ pre code {
                         outline: none;
                         background: none;
                     }
-                }    
+                }  
+                
+                &.active {
+	                
+	                .nav-link {
+		                color: $color;
+	                    background: none;
+	                }
+                }  
 
                 &.last {
                     margin-right: 0;
@@ -306,7 +315,7 @@ pre code {
             color: darken($color, 30%);
             .svg-inline--fa {
                 margin-right: 5px;
-                color: #fff;
+                color: rgba(0, 0, 0, 0.3);
             }
         }
     }
@@ -487,9 +496,10 @@ pre code {
     
     .info {
         .sub-title {
-            color: darken($color, 10%);
-            margin-bottom: 30px;
+            color: darken($color, 20%);
+            margin-bottom: 20px;
             margin-top: 0;
+            font-size: 18px;
         }
     }
     

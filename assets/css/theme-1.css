@@ -1,6 +1,6 @@
 /*! 
- * Template Name: devAid - Bootstrpa 4 Theme for developers
- * Version: 2.2
+ * Template Name: devAid - Bootstrpa 5 Theme for developers
+ * Version: BS5 v1.0
  * Author: Xiaoying Riley
  * Copyright: 3rd Wave Media
  * Twitter: @3rdwave_themes
@@ -42,6 +42,7 @@ a:hover {
   font-family: 'Montserrat', arial, sans-serif;
   padding: 8px 16px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .btn .svg-inline--fa, a.btn .svg-inline--fa {
@@ -97,7 +98,6 @@ pre code {
 
 /* ======= Header ======= */
 .header {
-  padding: 10px 0;
   background: #17baef;
   color: #fff;
   position: fixed;
@@ -110,23 +110,22 @@ pre code {
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  height: 70px;
 }
 
-.header.navbar-fixed-top .logo a {
+.header.navbar-fixed-top .logo {
   color: #17baef;
 }
 
 .header .logo {
   margin: 0;
   font-size: 26px;
-  padding-top: 10px;
-}
-
-.header .logo a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   color: #fff;
 }
 
-.header .logo a:hover {
+.header .logo:hover {
   text-decoration: none;
 }
 
@@ -145,6 +144,9 @@ pre code {
   right: 10px;
   top: 10px;
   background: #074f66;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .header .main-nav .navbar-toggler:focus {
@@ -188,11 +190,7 @@ pre code {
   -o-transition: none;
   font-size: 14px;
   padding: 15px 10px;
-}
-
-.header .main-nav .nav .nav-item .nav-link.active {
-  color: #17baef;
-  background: none;
+  text-decoration: none;
 }
 
 .header .main-nav .nav .nav-item .nav-link:hover {
@@ -207,6 +205,11 @@ pre code {
 
 .header .main-nav .nav .nav-item .nav-link:active {
   outline: none;
+  background: none;
+}
+
+.header .main-nav .nav .nav-item.active .nav-link {
+  color: #17baef;
   background: none;
 }
 
@@ -350,7 +353,7 @@ pre code {
 
 .features .feature-list li .svg-inline--fa {
   margin-right: 5px;
-  color: #fff;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* ======= Docs Section ======= */
@@ -594,9 +597,10 @@ pre code {
 }
 
 .contact .info .sub-title {
-  color: #0e98c5;
-  margin-bottom: 30px;
+  color: #0a7396;
+  margin-bottom: 20px;
   margin-top: 0;
+  font-size: 18px;
 }
 
 .contact .social-icons {

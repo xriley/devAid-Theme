@@ -1,33 +1,77 @@
-jQuery(document).ready(function($) {
+"use strict";
 
-    /* ======= Scrollspy ======= */
-    $('body').scrollspy({ target: '#header', offset: 400});
+/* ======= Header animation ======= */   
+const header = document.getElementById('header');  
+
+window.onload=function() 
+{   
+    headerAnimation(); 
+
+};
+
+window.onresize=function() 
+{   
+    headerAnimation(); 
+
+}; 
+
+window.onscroll=function() 
+{ 
+    headerAnimation(); 
+
+}; 
     
-    /* ======= Fixed header when scrolled ======= */
-    
-    $(window).bind('scroll', function() {
-         if ($(window).scrollTop() > 50) {
-             $('#header').addClass('navbar-fixed-top');
-         }
-         else {
-             $('#header').removeClass('navbar-fixed-top');
-         }
-    });
-   
-    /* ======= ScrollTo ======= */
-    $('a.scrollto').on('click', function(e){
-        
-        //store hash
-        var target = this.hash;
-                
-        e.preventDefault();
-        
-		$('body').scrollTo(target, 800, {offset: -70, 'axis':'y', easing:'easeOutQuad'});
-        //Collapse mobile menu after clicking
-		if ($('.navbar-collapse').hasClass('show')){
-			$('.navbar-collapse').removeClass('show');
-		}
+
+function headerAnimation () {
+
+    var scrollTop = window.scrollY;
+	
+	if ( scrollTop > 0 ) {	    
+	    header.classList.add('navbar-fixed-top');    
+	    	    
+	} else {
+	    header.classList.remove('navbar-fixed-top');
+	}
+
+};
+
+
+
+
+let scrollLinks = document.querySelectorAll('.scrollto');
+const pageNavWrapper = document.getElementById('navbar-collapse');
+
+scrollLinks.forEach((scrollLink) => {
+
+	scrollLink.addEventListener('click', (e) => {
 		
-	});
+		e.preventDefault();
 
+		let element = document.querySelector(scrollLink.getAttribute("href"));
+		
+		const yOffset = 70; //page .header height
+		
+		//console.log(yOffset);
+		
+		const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+		
+		window.scrollTo({top: y, behavior: 'smooth'});
+		
+		
+		//Collapse mobile menu after clicking
+		if (pageNavWrapper.classList.contains('show')){
+			pageNavWrapper.classList.remove('show');
+		}
+
+		
+    });
+	
+});
+
+/* ===== Gumshoe SrollSpy ===== */
+/* Ref: https://github.com/cferdinandi/gumshoe  */
+
+// Initialize Gumshoe
+var spy = new Gumshoe('#nav-menu .nav-link', {
+	offset: 70
 });
