@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Redmond STEM Center</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Calendar-->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          themeSystem: "standard",
+          initialView: 'listMonth',
+          headerToolbar : {
+            start: '', // will normally be on the left. if RTL, will be on the right
+            center: '',
+            end: '' // will normally be on the right. if RTL, will be on the left
+            },googleCalendarApiKey: 'AIzaSyDrbMA9lnLtVGBZzX8xmst1EPKWyRxNL_A',
+          events: {
+            googleCalendarId: 'c_j4q9pt6nv51l6butkb4h8ojrdg@group.calendar.google.com'
+          }
+                });
+                calendar.render();
+              });
+
+    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DDY3BQ0JQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2DDY3BQ0JQ');
+  </script> 
+  <!-- MailerLite Universal -->
+<script>
+  (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+  var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+  f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+  var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+  _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+  
+  var ml_account = ml('accounts', '2899750', 'v7x0o3h6b0', 'load');
+  </script>
+  <!-- End MailerLite Universal -->
+
+  <!-- Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo mr-auto">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar nav-menuW">
+        <ul onclick="closeMobile()">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/engage.html">Engage</a></li>    
+          <!-- <li><a href="/events.html">Events</a></li>  
+          <li><a href="/contact.html">Contact</a></li>               -->
+          <li><a href="https://blog.redmondstemcenter.org/">Blog</a></li>
+           <!-- <li><a class="shine" href="https://www.paypal.com/donate/?hosted_button_id=VTSBCU7UZFPLN">Donate</a></li>  -->
+          <li><a class="shine" href="http://kck.st/3GMabRN">Donate</a></li> 
+         
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+        <script>
+          function closeMobile(){
+            if (document.querySelector(".navbar").classList.contains('navbar-mobile')) {
+              document.querySelector('.navbar').classList.toggle('navbar-mobile');
+              document.querySelector('.mobile-nav-toggle').classList.toggle('bi-list');
+              document.querySelector('.mobile-nav-toggle').classList.toggle('bi-x');
+            }
+          }
+        </script>
+      </nav><!-- .nav-menu -->
+  
+      </div>
+  </header><!-- End Header -->
+  <section id="head">
+    <div class="keyart" id="nonparallax">
+        <h3 style="text-align: center; margin-bottom: 400px;" >An upcoming community youth makerspace in Redmond, WA</h3>
+    </div>
+    <div class="keyart" id="parallax">
+      <div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>		<!-- 00.0 -->
+      <div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>	<!-- 12.5 -->
+      <div class="keyart_layer parallax" id="keyart-2" data-speed="11">
+        <h3 style="text-align: center; margin-bottom: 450px; " >An upcoming community youth makerspace in Redmond, WA</h3>
+      </div>		<!-- 25.0 -->
+      <div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>	<!-- 37.5 -->
+      <div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>		<!-- 50.0 -->
+      <div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>	<!-- 62.5 -->
+      <div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>		<!-- 75.0 -->
+      <div class="keyart_layer" id="keyart-scrim"></div>
+      <div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>		<!-- 87.5 -->
+      <div class="keyart_layer" id="keyart-8" data-speed="100"></div>		<!-- 100. -->
+    </div>
+  </section>
+ <div class="maincontain"> 
+  <!-- ======= Hero Section ======= 
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Bettter digital experience with Ninestars</h1>
+          <h2>We are team of talented designers making websites with Bootstrap</h2>
+          <div>
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section> End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about overlay">
+      <div class="aboutcontainer" style="margin-bottom: 50px;">
+        <div class="container" style="margin-top: 100px;">    
+          <div class="row justify-content-between">
+            <div class="col-lg-7 d-flex align-items-center justify-content-center about-img">
+              <div  data-aos="fadeIn" data-aos-delay="10" class="containerVid">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/8oBQLUf784I" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-lg-5 pt-5 pt-lg-0">
+              <h3 data-aos="fade-up">Who Are We?</h3>
+              <hr data-aos="fade-up" style="width:100%;text-align:left; color: #F2F5EA;">
+              <p data-aos="fade-up" data-aos-delay="100">
+                We're a group of high school students raising funds for a <a style="color:white">youth community maker space</a> in the Redmond, WA area.
+                </p> 
+              <p  data-aos="fade-up" data-aos-delay="100"><b><a style="color:#F2F5EA">Redmond</a> <a style="color:#FF5964">STEM</a> <a style="color:#F2F5EA">Center</a></b> would function as a hub for students to work, learn, and interact with industry mentors and professionals. Watch the video to learn more about us!
+              </p>
+            <div class="centered-container" data-aos="fade-up" data-aos-delay="200"> 
+            <a class="link link--arrowed" href="/about.html">Click to see more
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" >
+                <g fill="none" stroke="#FF5964" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                  <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                  <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                </g>
+              </svg></a></div>
+             <!-- <div class="row">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Corporis voluptates sit</h4>
+                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Ullamco laboris nisi</h4>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section 
+    <div class="sectionBorder"></div>-->
+    <div class="headerB">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#F2F5EA" points="0,100 100,0 100,100"/>
+      </svg>
+    </div>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h3>Our Mission</h3>
+          <p>At Redmond STEM Center, we are building more than just a makerspace, we are building a community that will:</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class='bx bxl-discourse'></i></i></div>
+              <h4 class="title"><a href="">Foster a collaborative and inclusive environment.</a></h4>
+              <p class="description">By providing access to profesionals, mentors, enriching events, and other like-minded individuals, students will be able to reach their full potential at our space.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class='bx bx-network-chart'></i></div>
+              <h4 class="title"><a href="">Provide the facilities and equipment for teens to work, connect, and learn.</a></h4>
+              <p class="description">Students will have their STEM educational resources expanded greatly, and be provided with opportunities for high level projects and working with industry professionals.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Create a sustainable organization that will continue growing.</a></h4>
+              <p class="description">We are creating the Redmond STEM Center to serve the community and propagate science and technology to teens in the Seattle Area for many years to come.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Connect students to respected STEM organizations.</a></h4>
+              <p class="description">The STEM center will welcome respected STEM organizations such as teams from FIRST Robotics, Vex Robotics, Rocketry Clubs, and various other interdisciplinary programs. </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    <div class="headerW">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#F2F5EA" points="0,100 100,0 100,100"/>
+      </svg>
+    </div>
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h3 style="color:#F2F5EA">Events</h3>
+          <p style="color:#F2F5EA">Check out our upcoming events!</p>
+        </div>
+        <h3 style="text-align: center; color: white;"><i class='bx bxs-calendar-x'></i> There are no upcoming events at this time.</h2>
+        <!-- <div id='calendar' style="color:#96acc0"></div> -->
+
+      </div>
+    </section><!-- End Events Section -->
+    <div class="headerB">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#F2F5EA" points="0,100 100,0 100,100"/>
+      </svg>
+    </div>
+    <!-- ======= Engage Section ======= -->
+    <section id="get-involved" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h3>Get Involved</h3>
+          <p>Whether you are a student, parent, or partner, RSC can benefit you!</p>
+        </div>
+        <div class="container">
+          <div class="row" >
+              <div class="col-md">
+                <div class="card" style="background-image: url(assets/img/flowers.png); text-align: center;">
+                  <h1>Parent?</h1>
+                  <h2 style="font-size: 20px; padding: 25px;">Subscribe to our newsletter and join our facebook group to be apart of the RSC parent community. <br> <hr> Apply to be an official RSC mentor.</h2>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="card" style="background-image: url(assets/img/lights.svg); background-size: 200%; text-align: center;">
+                  <h1>Partner?</h1>
+                  <h2 style="font-size: 20px; padding: 25px;">Learn more about how Redmond STEM Center can benefit you or your organization. View our business plan & project proposal. <br> <hr> Contact us for any partnership inquiries.</h2>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="card" style="background-image: url(assets/img/Group65.png); background-size: 130%; background-position: left; text-align: center;">
+                  <h1>Student?</h1>
+                  <h2 style="font-size: 20px; padding: 25px;">Join our discord server to be a member of the RSC community. Also, follow our socials to stay updated on upcoming events. <br> <hr> Apply to be an official RSC member.</h2>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+        
+
+      </div>
+    </section><!-- End Engage Section -->
+    <div class="headerW">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#F2F5EA" points="0,100 100,0 100,100"/>
+      </svg>
+    </div>
+    <!-- ======= Donate Section ======= -->
+    <section id="donate" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h3 style="color: #F2F5EA;">Donate</h3>
+          <p style="color: #F2F5EA;">RSC runs on your donations! Please consider making a contribution through PayPal, we greatly appreciate it!</p>
+        </div>
+
+        <div class="container justify-content-center" data-aos="fade-up" style="margin-bottom: 50px;">
+          <div class="button_cont" style="text-align:center;"><a class="paypalButton" href="https://www.paypal.com/donate/?hosted_button_id=VTSBCU7UZFPLN" target="_blank" rel="nofollow noopener">Donate through PayPal</a></div>
+        </div>
+        
+      </div>
+    </section><!-- End Team Section -->
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h3>Our Sponsors</h3>
+          <p>Thank you to all our amazing sponsors for making RSC possible!</p>
+        </div>
+        <div class="clients-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" onclick="open1()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-10.png" onclick="open10()" class="img-fluid" alt=""></div>
+           <div class="swiper-slide"><img src="assets/img/clients/client-2.png" onclick="open2()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" onclick="open3()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" onclick="open4()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" onclick="open5()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" onclick="open6()" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" onclick="open7()" class="img-fluid" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="assets/img/clients/client-8.png" onclick="open8()" class="img-fluid" alt=""></div> -->
+            <div class="swiper-slide"><img src="assets/img/clients/client-9.png" onclick="open9()" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+    <div class="headerE">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#F2F5EA" points="0, 0 100,0 50,100"/>
+      </svg>
+    </div>
+    <!-- ======= Contact Us Section ======= 
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h3>Contact Us</h3>
+          <p>Contact us the get started</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section> End Contact Us Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+   <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4 style="color:#F2F5EA">Join Our Newsletter</h4>
+            <p style="color:#F2F5EA">Stay updated on upcoming events and important RSC news!</p>
+            <form action="" method="post">
+              <input type="email" placeholder="Enter your email"name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <div class="footer-newsletter" id="newsletterSign">
+      <div class="container">
+        <div class="row justify-content-center fRows">
+          <div class="ml-form-embed"
+           data-account="2899750:v7x0o3h6b0"
+           data-form="4743443:a3a2t0">
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="headerF">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#171D21" points="0,0 100,0 50,100"/>
+      </svg>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Redmond STEM Center</h3>
+            <p>
+              An upcoming community youth makerspace in 
+              Redmond, Washington.<br>
+              Exciting things are coming soon! <br><br>  
+            </p>
+            <img class="img-fluid" width="90%" src="../assets/img/logo.png">
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/index.html">Home</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Events</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="/about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/engage.html">Engage</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Contact us</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="https://blog.redmondstemcenter.org/#/">RSC Blog</a></li>
+            
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Get Involved</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.paypal.com/donate/?hosted_button_id=VTSBCU7UZFPLN">Donate</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIeeUv1lxaoYZUsbRNbVqkMiqWURi7dchbNilSMX_3ND4f2A/viewform">Apply to mentor</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBQUf-3K7_QGrNJFVh1uLsEGna8UGaJ8uR7hrKD_hUzPEMDA/viewform">Apply to join the team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="mailto:eric.zhou@redmondstemcenter.org">Partnership Inquiries</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Socials</h4>
+              <p>Follow our pages to stay updated!</p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/redmondstemcenter" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/redmondstemcenter/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCM7_Kr-uNFtEhmt2rVCitRg" target="_blank" class="google-plus"><i class="bx bxl-youtube"></i></a>
+                <a href="https://www.twitch.tv/redmondstemcenter" target="_blank" class="linkedin"><i class="bx bxl-twitch"></i></a>
+                <a href="https://www.linkedin.com/company/redmond-stem-center/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            <div class="footer-contact" style="margin-top: 20px;">
+              <p>
+                <strong>Email:</strong> <a target="_blank" href="mailto:info@redmondstemcenter.org">info@redmondstemcenter.org</a><br>
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; 2021 <strong><span>Redmond Robotics</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Website by <a href="https://www.linkedin.com/in/abel-dagne-9323261b9/">Abel Dagne</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+</main><!-- End #main -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script>
+    var ml_webform_3567916 = ml_account('webforms', '3567916', 'l3k9n7', 'load');
+    ml_webform_3567916('animation', 'fadeIn');
+  </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</div>
+</body>
+
+</html>
