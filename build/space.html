@@ -15,11 +15,66 @@
         <header class="bg-[#ead7e1] sticky top-0 z-10">
             <h1 class="text-black text-4xl text-center p-7 font-mohave">Apple Tree Plaza</h1>
         </header>
-        <section class="mx-auto max-w-7xl p-10 sm:flex-row lm:flex-col">
-            <p class="mohave text-2xl">
-                a
-            </p>
-            <img src="space_images/Garage.JPG" alt="Garage" class="block w-1/2">
+        <section class="mx-auto max-w-7xl py-10 lg:flex">
+            <div class="lg:w-1/2 px-5">
+                <p class="mohave text-2xl pb-10">
+                    Discover an exceptional opportunity to take your business to new heights at Apple Tree Plaza, an unrivaled commercial and office space strategically located near the bustling heart of Bellevue. 
+                </p>
+                <ul class="mohave text-2xl list1 pl-6">
+                    <li>Situated on 20th Street close to 148th Street</li>
+                    <li><strong>1500 </strong>square feet of inviting office space</li>
+                    <li><strong>500 </strong>square feet of warehouse/garage space</li>
+                </ul>
+                <div class="text-center mt-10 mb-10">
+                    <a class="mohave text-2xl text-[#81aa8a]" href="https://www.loopnet.com/Listing/13620-NE-20th-St-Bellevue-WA/17703695/">
+                        Click here to check out our listing! 
+                    </a> 
+                </div> 
+            </div>
+            <div class="slider-container lg:w-1/2 overflow-hidden">
+                <div class="slider">
+                    <img class="w-full" src="space_images/garage2.JPG" alt="Image 1">
+                    <img class="w-full" src="space_images/garage.JPG" alt="Image 2">
+                </div>
+            </div>              
+        </section>
+        <section class="my-10">
+            <p class="text-center 2xl"></p>
         </section>
     </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const slider = document.querySelector(".slider");
+          let slideIndex = 0;
+      
+          function showSlide(index) {
+            const slides = slider.querySelectorAll("img");
+            slides.forEach((slide, i) => {
+              if (i === index) {
+                slide.classList.add("block");
+                slide.classList.remove("hidden");
+              } else {
+                slide.classList.add("hidden");
+                slide.classList.remove("block");
+              }
+            });
+          }
+      
+          function nextSlide() {
+            console.log('a')
+            slideIndex++;
+            if (slideIndex >= slider.querySelectorAll("img").length) {
+              slideIndex = 0;
+            }
+            showSlide(slideIndex);
+          }
+      
+          // Show the initial slide
+          showSlide(slideIndex);
+      
+          // Auto slide every 3 seconds
+          setInterval(nextSlide, 3000);
+        });
+      </script>
 </html>
+  

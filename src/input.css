@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Mohave&display=swap');
+
+.list1 li {
+    text-indent: -20px;
+    padding-bottom: 3%;
+}
+
+.list1 li:before {
+    content: "- ";
+    text-indent: -20px;
+}
