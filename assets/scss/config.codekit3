@@ -7,7 +7,7 @@
       "uuidString" : "C73A1A4D-606E-44E7-8B26-2F0B17193174"
     }
   ],
-  "creatorBuild" : "34510",
+  "creatorBuild" : "34576",
   "files" : {
     "\/theme-1.scss" : {
       "aP" : 0,
@@ -952,9 +952,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -966,6 +963,9 @@
       },
       "no-obj-calls" : {
         "active" : 1
+      },
+      "no-object-constructor" : {
+        "active" : 0
       },
       "no-octal" : {
         "active" : 1
@@ -1020,9 +1020,6 @@
       "no-return-assign" : {
         "active" : 0,
         "optionString" : "'except-parens'"
-      },
-      "no-return-await" : {
-        "active" : 0
       },
       "no-script-url" : {
         "active" : 0
